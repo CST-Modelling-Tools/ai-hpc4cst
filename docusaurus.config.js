@@ -88,24 +88,83 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: 'AI-HPC4CST',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'AI-HPC4CST',
+          src: 'img/logo.svg', // Replace later with official project logo
         },
         items: [
+          // Home
+          { to: '/', label: 'Home', position: 'left' },
+
+          // Project (opens the full sidebar navigation)
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'projectSidebar',
+            label: 'Project',
             position: 'left',
-            label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+
+          // Direct top-level entries (linked by docId, not raw paths)
           {
-            href: 'https://github.com/facebook/docusaurus',
+            type: 'doc',
+            docId: 'research/overview',
+            label: 'Research',
+            position: 'left',
+          },
+          {
+            type: 'doc',
+            docId: 'results/publications',
+            label: 'Results',
+            position: 'left',
+          },
+          {
+            type: 'doc',
+            docId: 'team/core-team',
+            label: 'Team',
+            position: 'left',
+          },
+          {
+            type: 'doc',
+            docId: 'contact',
+            label: 'Contact',
+            position: 'left',
+          },
+
+          // Tools dropdown
+          {
+            label: 'Tools',
+            position: 'left',
+            items: [
+              {
+                label: 'Tonatiuh++',
+                href: 'https://cst-modelling-tools.github.io/tonatiuhpp-blog/',
+              },
+              // Future tools:
+              // {
+              //   label: 'Tool X',
+              //   href: 'https://cst-modelling-tools.github.io/toolx-blog/',
+              // },
+            ],
+          },
+
+          // GitHub dropdown
+          {
             label: 'GitHub',
             position: 'right',
+            items: [
+              {
+                label: 'AI-HPC4CST Website',
+                href: 'https://github.com/CST-Modelling-Tools/ai-hpc4cst',
+              },
+              {
+                label: 'CST-Modelling-Tools Org',
+                href: 'https://github.com/CST-Modelling-Tools',
+              },
+            ],
           },
+
+          // Language selector
           { type: 'localeDropdown', position: 'right' },
         ],
       },
