@@ -325,5 +325,11 @@
   "theme.tags.tagsPageTitle": {
     "message": "Etiquetas",
     "description": "The title of the tag list page"
+  },
+  "footer.funding.title": {
+    "message": "Funding"
+  },
+  "footer.funding.text": {
+    "message": "Grant ATR2024-155003 funded by MICIU/AEI/10.13039/501100011033."
   }
 }

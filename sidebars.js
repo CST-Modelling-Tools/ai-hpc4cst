@@ -32,9 +32,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Tools',
-      items: [
-        'tools/overview',
-      ],
+      items: ['tools/overview'],
     },
 
     {

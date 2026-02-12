@@ -172,46 +172,29 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'AI-HPC4CST',
             items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
+              {label: 'Project', to: '/docs/project/objectives'},
+              {label: 'Research', to: '/docs/research/overview'},
+              {label: 'Results', to: '/docs/results/publications'},
+              {label: 'Contact', to: '/docs/contact'},
             ],
           },
           {
-            title: 'Community',
+            title: 'Tools',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Tonatiuh++ Development Blog',
+                href: 'https://cst-modelling-tools.github.io/tonatiuhpp-blog/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'CST-Modelling-Tools (GitHub)',
+                href: 'https://github.com/CST-Modelling-Tools',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `© ${new Date().getFullYear()} AI-HPC4CST`,
       },
       prism: {
         theme: prismThemes.github,

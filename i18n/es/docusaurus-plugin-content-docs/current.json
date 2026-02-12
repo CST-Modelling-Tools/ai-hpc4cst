@@ -14,5 +14,25 @@
   "sidebar.tutorialSidebar.category.Tutorial - Extras": {
     "message": "Tutorial - Extras",
     "description": "The label for category 'Tutorial - Extras' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.projectSidebar.category.Project": {
+    "message": "Project",
+    "description": "The label for category 'Project' in sidebar 'projectSidebar'"
+  },
+  "sidebar.projectSidebar.category.Research": {
+    "message": "Research",
+    "description": "The label for category 'Research' in sidebar 'projectSidebar'"
+  },
+  "sidebar.projectSidebar.category.Tools": {
+    "message": "Tools",
+    "description": "The label for category 'Tools' in sidebar 'projectSidebar'"
+  },
+  "sidebar.projectSidebar.category.Results": {
+    "message": "Results",
+    "description": "The label for category 'Results' in sidebar 'projectSidebar'"
+  },
+  "sidebar.projectSidebar.category.Team & Partners": {
+    "message": "Team & Partners",
+    "description": "The label for category 'Team & Partners' in sidebar 'projectSidebar'"
   }
 }

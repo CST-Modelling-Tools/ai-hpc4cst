@@ -18,5 +18,45 @@
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"
+  },
+  "item.label.Home": {
+    "message": "Home",
+    "description": "Navbar item with label Home"
+  },
+  "item.label.Project": {
+    "message": "Project",
+    "description": "Navbar item with label Project"
+  },
+  "item.label.Research": {
+    "message": "Research",
+    "description": "Navbar item with label Research"
+  },
+  "item.label.Results": {
+    "message": "Results",
+    "description": "Navbar item with label Results"
+  },
+  "item.label.Team": {
+    "message": "Team",
+    "description": "Navbar item with label Team"
+  },
+  "item.label.Contact": {
+    "message": "Contact",
+    "description": "Navbar item with label Contact"
+  },
+  "item.label.Tools": {
+    "message": "Tools",
+    "description": "Navbar item with label Tools"
+  },
+  "item.label.Tonatiuh++": {
+    "message": "Tonatiuh++",
+    "description": "Navbar item with label Tonatiuh++"
+  },
+  "item.label.AI-HPC4CST Website": {
+    "message": "AI-HPC4CST Website",
+    "description": "Navbar item with label AI-HPC4CST Website"
+  },
+  "item.label.CST-Modelling-Tools Org": {
+    "message": "CST-Modelling-Tools Org",
+    "description": "Navbar item with label CST-Modelling-Tools Org"
   }
 }
