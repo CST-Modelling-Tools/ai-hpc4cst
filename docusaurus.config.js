@@ -10,38 +10,33 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'AI-HPC4CST',
+  tagline:
+    'Disruptive innovation in CST solar tower systems through Artificial Intelligence and High-Performance Computing',
   favicon: 'img/favicon.ico',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
+  // Production URL
   url: 'https://cst-modelling-tools.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  // GitHub Pages base URL
   baseUrl: '/ai-hpc4cst/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'cst-modelling-tools', // Usually your GitHub org/user name.
-  projectName: 'ai-hpc4cst', // Usually your repo name.
-  
+  // GitHub Pages deployment config
+  organizationName: 'CST-Modelling-Tools',
+  projectName: 'ai-hpc4cst',
+
   trailingSlash: true,
   onBrokenLinks: 'throw',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'es'],
     localeConfigs: {
-      en: { label: 'English' },
-      es: { label: 'Español' },
+      en: {label: 'English'},
+      es: {label: 'Español'},
     },
   },
 
@@ -52,10 +47,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/CST-Modelling-Tools/ai-hpc4cst/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -63,11 +55,7 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
+          editUrl: 'https://github.com/CST-Modelling-Tools/ai-hpc4cst/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -82,11 +70,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      // Social card (replace later with project-specific image)
+      image: 'img/social-card.jpg',
+
       colorMode: {
         respectPrefersColorScheme: true,
       },
+
       navbar: {
         title: 'AI-HPC4CST',
         logo: {
@@ -94,10 +84,8 @@ const config = {
           src: 'img/logo.svg', // Replace later with official project logo
         },
         items: [
-          // Home
-          { to: '/', label: 'Home', position: 'left' },
+          {to: '/', label: 'Home', position: 'left'},
 
-          // Project (opens the full sidebar navigation)
           {
             type: 'docSidebar',
             sidebarId: 'projectSidebar',
@@ -105,7 +93,6 @@ const config = {
             position: 'left',
           },
 
-          // Direct top-level entries (linked by docId, not raw paths)
           {
             type: 'doc',
             docId: 'research/overview',
@@ -131,7 +118,6 @@ const config = {
             position: 'left',
           },
 
-          // Tools dropdown
           {
             label: 'Tools',
             position: 'left',
@@ -140,15 +126,9 @@ const config = {
                 label: 'Tonatiuh++',
                 href: 'https://cst-modelling-tools.github.io/tonatiuhpp-blog/',
               },
-              // Future tools:
-              // {
-              //   label: 'Tool X',
-              //   href: 'https://cst-modelling-tools.github.io/toolx-blog/',
-              // },
             ],
           },
 
-          // GitHub dropdown
           {
             label: 'GitHub',
             position: 'right',
@@ -164,10 +144,10 @@ const config = {
             ],
           },
 
-          // Language selector
-          { type: 'localeDropdown', position: 'right' },
+          {type: 'localeDropdown', position: 'right'},
         ],
       },
+
       footer: {
         style: 'dark',
         links: [
@@ -196,6 +176,7 @@ const config = {
         ],
         copyright: `© ${new Date().getFullYear()} AI-HPC4CST`,
       },
+
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,

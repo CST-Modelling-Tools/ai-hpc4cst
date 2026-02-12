@@ -3,9 +3,11 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Translate from '@docusaurus/Translate';
 import styles from './index.module.css';
 
-function Stat({ value, label }) {
+function Stat({value, label}) {
   return (
     <div className={styles.stat}>
       <div className={styles.statValue}>{value}</div>
@@ -14,7 +16,7 @@ function Stat({ value, label }) {
   );
 }
 
-function Card({ title, description, href, tag }) {
+function Card({title, description, href, tag}) {
   return (
     <Link className={styles.card} to={href}>
       <div className={styles.cardHeader}>
@@ -27,41 +29,98 @@ function Card({ title, description, href, tag }) {
   );
 }
 
+function FundingStrip() {
+  const logo = useBaseUrl('/img/funding/MICIU_AEI.jpg');
+
+  return (
+    <div className={styles.fundingStrip} role="note" aria-label="Funding acknowledgement">
+      <div className={styles.fundingText}>
+        <div className={styles.fundingKicker}>
+          <Translate id="home.funding.kicker">Funded by</Translate>
+        </div>
+        <div className={styles.fundingLine}>
+          <Translate id="home.funding.line">
+            Grant ATR2024-155003 funded by MICIU/AEI/10.13039/501100011033.
+          </Translate>
+        </div>
+      </div>
+
+      <a
+        className={styles.fundingLogoLink}
+        href="https://www.aei.gob.es/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="MICIU and AEI"
+      >
+        <img className={styles.fundingLogo} src={logo} alt="MICIU and AEI" />
+      </a>
+    </div>
+  );
+}
+
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
+  const {siteConfig} = useDocusaurusContext();
 
   return (
     <Layout
       title={siteConfig.title}
-      description="AI + HPC for next-generation optimization of CST solar tower systems"
+      description="AI + HPC to accelerate simulation-driven optimization of CST solar tower systems"
     >
       <header className={styles.hero}>
         <div className={clsx('container', styles.heroInner)}>
+          {/* Compliance: visible in first screen (no scroll) */}
+          <FundingStrip />
+
           <div className={styles.heroLeft}>
-            <div className={styles.kicker}>Research project</div>
+            <div className={styles.kicker}>
+              <Translate id="home.kicker">ATRAE research project</Translate>
+            </div>
+
+            {/* Official full project title (prominent) */}
+            <p className={styles.officialTitle}>
+              <Translate id="home.officialTitle">
+                Towards disruptive innovation in advanced solar energy systems through artificial
+                intelligence and high performance computing.
+              </Translate>
+            </p>
+
             <h1 className={styles.heroTitle}>
-              AI + HPC for next-generation optimization of CST solar tower systems
+              <Translate id="home.heroTitle">
+                Transforming solar tower system design with AI and high-performance computing
+              </Translate>
             </h1>
+
             <p className={styles.heroSubtitle}>
-              AI-HPC4CST advances integral, simulation-driven optimization across heliostat field,
-              receiver, and system constraints—accelerated by high-performance computing and shared
-              through open science.
+              <Translate id="home.heroSubtitle">
+                AI-HPC4CST advances integral, multi-objective optimization of solar tower systems by combining artificial intelligence with high-performance computing.
+              </Translate>
             </p>
 
             <div className={styles.heroActions}>
-              <Link className={clsx('button button--primary', styles.primaryButton)} to="/docs/research/overview">
-                Explore research
+              <Link
+                className={clsx('button button--primary', styles.primaryButton)}
+                to="/docs/project/objectives"
+              >
+                <Translate id="home.cta.project">Project overview</Translate>
               </Link>
-              <Link className={clsx('button button--secondary', styles.secondaryButton)} to="/docs/tools/overview">
-                Explore tools
+
+              <Link
+                className={clsx('button button--secondary', styles.secondaryButton)}
+                to="/docs/research/overview"
+              >
+                <Translate id="home.cta.research">Research</Translate>
               </Link>
-              <Link className={clsx('button button--secondary', styles.secondaryButton)} to="/docs/results/publications">
-                Publications
+
+              <Link
+                className={clsx('button button--secondary', styles.secondaryButton)}
+                to="/docs/results/publications"
+              >
+                <Translate id="home.cta.publications">Publications</Translate>
               </Link>
             </div>
 
             <div className={styles.statsRow}>
-              <Stat value="AI" label="Optimization & surrogates" />
+              <Stat value="AI" label="Surrogates & optimization" />
               <Stat value="HPC" label="Acceleration & scalability" />
               <Stat value="CST" label="Solar tower systems" />
             </div>
@@ -69,14 +128,24 @@ export default function Home() {
 
           <div className={styles.heroRight}>
             <div className={styles.heroPanel}>
-              <div className={styles.panelTitle}>For the CST community & decision makers</div>
+              <div className={styles.panelTitle}>
+                <Translate id="home.panel.title">For CST practitioners & decision makers</Translate>
+              </div>
               <ul className={styles.panelList}>
-                <li>Clear project structure, objectives, and work plan</li>
-                <li>Open-source tools and reproducible workflows</li>
-                <li>Results, publications, and public deliverables</li>
+                <li>
+                  <Translate id="home.panel.b1">Clear objectives, work plan, and timeline</Translate>
+                </li>
+                <li>
+                  <Translate id="home.panel.b2">Open tools and reproducible workflows</Translate>
+                </li>
+                <li>
+                  <Translate id="home.panel.b3">Results, publications, and public deliverables</Translate>
+                </li>
               </ul>
               <div className={styles.panelFooter}>
-                <Link to="/docs/project/objectives">Project overview →</Link>
+                <Link to="/docs/project/objectives">
+                  <Translate id="home.panel.link">Start here →</Translate>
+                </Link>
               </div>
             </div>
           </div>
@@ -102,7 +171,7 @@ export default function Home() {
             />
             <Card
               title="Research"
-              description="Methods: multi-objective optimization, AI surrogates, and HPC workflows."
+              description="Multi-objective optimization, AI surrogates, and HPC workflows."
               href="/docs/research/overview"
               tag="Methods"
             />
@@ -125,7 +194,10 @@ export default function Home() {
             </div>
 
             <div className={styles.grid2}>
-              <a className={styles.toolCard} href="https://cst-modelling-tools.github.io/tonatiuhpp-blog/">
+              <a
+                className={styles.toolCard}
+                href="https://cst-modelling-tools.github.io/tonatiuhpp-blog/"
+              >
                 <div className={styles.toolName}>Tonatiuh++</div>
                 <div className={styles.toolDesc}>CST ray-tracing & modelling toolkit blog</div>
                 <div className={styles.toolCta}>Open blog →</div>
@@ -133,7 +205,9 @@ export default function Home() {
 
               <div className={styles.toolCardMuted}>
                 <div className={styles.toolName}>Upcoming tools</div>
-                <div className={styles.toolDesc}>New project tools will be published as separate blogs here.</div>
+                <div className={styles.toolDesc}>
+                  New project tools will be published as separate blogs here.
+                </div>
                 <div className={styles.toolCtaMuted}>Coming soon</div>
               </div>
             </div>
