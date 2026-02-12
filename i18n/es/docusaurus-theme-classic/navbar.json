@@ -1,50 +1,42 @@
 {
   "title": {
-    "message": "My Site",
+    "message": "AI-HPC4CST",
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "My Site Logo",
+    "message": "AI-HPC4CST",
     "description": "The alt text of navbar logo"
-  },
-  "item.label.Tutorial": {
-    "message": "Tutorial",
-    "description": "Navbar item with label Tutorial"
-  },
-  "item.label.Blog": {
-    "message": "Blog",
-    "description": "Navbar item with label Blog"
   },
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"
   },
   "item.label.Home": {
-    "message": "Home",
+    "message": "Inicio",
     "description": "Navbar item with label Home"
   },
   "item.label.Project": {
-    "message": "Project",
+    "message": "Proyecto",
     "description": "Navbar item with label Project"
   },
   "item.label.Research": {
-    "message": "Research",
+    "message": "Investigación",
     "description": "Navbar item with label Research"
   },
   "item.label.Results": {
-    "message": "Results",
+    "message": "Resultados",
     "description": "Navbar item with label Results"
   },
   "item.label.Team": {
-    "message": "Team",
+    "message": "Equipo",
     "description": "Navbar item with label Team"
   },
   "item.label.Contact": {
-    "message": "Contact",
+    "message": "Contacto",
     "description": "Navbar item with label Contact"
   },
   "item.label.Tools": {
-    "message": "Tools",
+    "message": "Herramientas",
     "description": "Navbar item with label Tools"
   },
   "item.label.Tonatiuh++": {
@@ -52,11 +44,11 @@
     "description": "Navbar item with label Tonatiuh++"
   },
   "item.label.AI-HPC4CST Website": {
-    "message": "AI-HPC4CST Website",
+    "message": "Web AI-HPC4CST",
     "description": "Navbar item with label AI-HPC4CST Website"
   },
   "item.label.CST-Modelling-Tools Org": {
-    "message": "CST-Modelling-Tools Org",
+    "message": "Org CST-Modelling-Tools",
     "description": "Navbar item with label CST-Modelling-Tools Org"
   }
 }
