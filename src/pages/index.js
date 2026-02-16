@@ -7,7 +7,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import Translate from '@docusaurus/Translate';
 import styles from './index.module.css';
 
-function Stat({value, label}) {
+function Stat({ value, label }) {
   return (
     <div className={styles.stat}>
       <div className={styles.statValue}>{value}</div>
@@ -16,9 +16,9 @@ function Stat({value, label}) {
   );
 }
 
-function Card({title, description, href, tag}) {
+function Card({ title, description, href, tag }) {
   return (
-    <Link className={styles.card} to={href}>
+    <Link className={styles.card} to={href} aria-label={`${title}: ${description}`}>
       <div className={styles.cardHeader}>
         <div className={styles.cardTitle}>{title}</div>
         {tag ? <div className={styles.badge}>{tag}</div> : null}
@@ -50,7 +50,7 @@ function FundingStrip() {
         href="https://www.aei.gob.es/"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="MICIU and AEI"
+        aria-label="MICIU and AEI (opens in a new tab)"
       >
         <img className={styles.fundingLogo} src={logo} alt="MICIU and AEI" />
       </a>
@@ -59,16 +59,15 @@ function FundingStrip() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
 
   return (
     <Layout
       title={siteConfig.title}
-      description="AI + HPC to accelerate simulation-driven optimization of CST solar tower systems"
+      description="AI and HPC to enable integral, multi-objective optimisation of solar tower systems"
     >
-      <header className={styles.hero}>
+      <header className={styles.hero} aria-label="Project overview hero">
         <div className={clsx('container', styles.heroInner)}>
-          {/* Compliance: visible in first screen (no scroll) */}
           <FundingStrip />
 
           <div className={styles.heroLeft}>
@@ -76,7 +75,6 @@ export default function Home() {
               <Translate id="home.kicker">ATRAE research project</Translate>
             </div>
 
-            {/* Official full project title (prominent) */}
             <p className={styles.officialTitle}>
               <Translate id="home.officialTitle">
                 Towards disruptive innovation in advanced solar energy systems through artificial
@@ -96,51 +94,34 @@ export default function Home() {
               </Translate>
             </p>
 
-            <div className={styles.heroActions}>
-              <Link
-                className={clsx('button button--primary', styles.primaryButton)}
-                to="/docs/project/objectives"
-              >
+            <nav className={styles.heroActions} aria-label="Primary actions">
+              <Link className={clsx('button button--primary', styles.primaryButton)} to="/docs/project/objectives">
                 <Translate id="home.cta.project">Project overview</Translate>
               </Link>
-
-              <Link
-                className={clsx('button button--secondary', styles.secondaryButton)}
-                to="/docs/research/overview"
-              >
+              <Link className={clsx('button button--secondary', styles.secondaryButton)} to="/docs/research/overview">
                 <Translate id="home.cta.research">Research</Translate>
               </Link>
-
-              <Link
-                className={clsx('button button--secondary', styles.secondaryButton)}
-                to="/docs/results/publications"
-              >
+              <Link className={clsx('button button--secondary', styles.secondaryButton)} to="/docs/results/publications">
                 <Translate id="home.cta.publications">Publications</Translate>
               </Link>
-            </div>
+            </nav>
 
-            <div className={styles.statsRow}>
+            <div className={styles.statsRow} aria-label="Project pillars">
               <Stat value="AI" label="Surrogates & optimization" />
               <Stat value="HPC" label="Acceleration & scalability" />
               <Stat value="CST" label="Solar tower systems" />
             </div>
           </div>
 
-          <div className={styles.heroRight}>
+          <aside className={styles.heroRight} aria-label="Audience summary">
             <div className={styles.heroPanel}>
-              <div className={styles.panelTitle}>
+              <div className={styles.panelTitle} id="audience-panel-title">
                 <Translate id="home.panel.title">For CST practitioners & decision makers</Translate>
               </div>
-              <ul className={styles.panelList}>
-                <li>
-                  <Translate id="home.panel.b1">Clear objectives, work plan, and timeline</Translate>
-                </li>
-                <li>
-                  <Translate id="home.panel.b2">Open tools and reproducible workflows</Translate>
-                </li>
-                <li>
-                  <Translate id="home.panel.b3">Results, publications, and public deliverables</Translate>
-                </li>
+              <ul className={styles.panelList} aria-labelledby="audience-panel-title">
+                <li><Translate id="home.panel.b1">Clear objectives, work plan, and timeline</Translate></li>
+                <li><Translate id="home.panel.b2">Open tools and reproducible workflows</Translate></li>
+                <li><Translate id="home.panel.b3">Results, publications, and public deliverables</Translate></li>
               </ul>
               <div className={styles.panelFooter}>
                 <Link to="/docs/project/objectives">
@@ -148,14 +129,14 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-          </div>
+          </aside>
         </div>
       </header>
 
       <main className={styles.main}>
-        <section className={clsx('container', styles.section)}>
+        <section className={clsx('container', styles.section)} aria-labelledby="why-title">
           <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Why it matters</h2>
+            <h2 className={styles.sectionTitle} id="why-title">Why it matters</h2>
             <p className={styles.sectionSubtitle}>
               CST optimization is high-dimensional and multi-objective, with expensive coupled simulations.
               AI-HPC4CST targets faster iteration, better designs, and transparent reproducibility.
@@ -184,10 +165,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.band}>
+        <section className={styles.band} aria-labelledby="tools-title">
           <div className={clsx('container', styles.section)}>
             <div className={styles.sectionHeader}>
-              <h2 className={styles.sectionTitle}>Tools ecosystem</h2>
+              <h2 className={styles.sectionTitle} id="tools-title">Tools ecosystem</h2>
               <p className={styles.sectionSubtitle}>
                 The main site provides project context. Each tool has its own blog and documentation hub.
               </p>
@@ -197,26 +178,27 @@ export default function Home() {
               <a
                 className={styles.toolCard}
                 href="https://cst-modelling-tools.github.io/tonatiuhpp-blog/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Tonatiuh++ Development Blog (opens in a new tab)"
               >
                 <div className={styles.toolName}>Tonatiuh++</div>
                 <div className={styles.toolDesc}>CST ray-tracing & modelling toolkit blog</div>
                 <div className={styles.toolCta}>Open blog →</div>
               </a>
 
-              <div className={styles.toolCardMuted}>
+              <div className={styles.toolCardMuted} aria-label="Upcoming tools (coming soon)">
                 <div className={styles.toolName}>Upcoming tools</div>
-                <div className={styles.toolDesc}>
-                  New project tools will be published as separate blogs here.
-                </div>
+                <div className={styles.toolDesc}>New project tools will be published as separate blogs here.</div>
                 <div className={styles.toolCtaMuted}>Coming soon</div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className={clsx('container', styles.section)}>
+        <section className={clsx('container', styles.section)} aria-labelledby="results-title">
           <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Results & dissemination</h2>
+            <h2 className={styles.sectionTitle} id="results-title">Results & dissemination</h2>
             <p className={styles.sectionSubtitle}>
               Publications, software releases, and events will be collected and updated throughout the project.
             </p>

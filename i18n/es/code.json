@@ -231,7 +231,7 @@
     "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "Página de Inicio",
+    "message": "Inicio",
     "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
@@ -326,10 +326,54 @@
     "message": "Etiquetas",
     "description": "The title of the tag list page"
   },
+
   "footer.funding.title": {
-    "message": "Funding"
+    "message": "Financiación"
   },
   "footer.funding.text": {
-    "message": "Grant ATR2024-155003 funded by MICIU/AEI/10.13039/501100011033."
+    "message": "Ayuda ATR2024-155003 financiada por MICIU/AEI/10.13039/501100011033."
+  },
+
+  "home.funding.kicker": {
+    "message": "Financiado por"
+  },
+  "home.funding.line": {
+    "message": "Ayuda ATR2024-155003 financiada por MICIU/AEI/10.13039/501100011033."
+  },
+  "home.kicker": {
+    "message": "Proyecto de investigación ATRAE"
+  },
+  "home.officialTitle": {
+    "message": "Hacia la innovación disruptiva en sistemas avanzados de energía solar mediante inteligencia artificial y computación de altas prestaciones."
+  },
+  "home.heroTitle": {
+    "message": "Transformando el diseño de sistemas de torre solar mediante IA y computación de altas prestaciones"
+  },
+  "home.heroSubtitle": {
+    "message": "El proyecto AI-HPC4CST desarrolla métodos de optimización integral y multiobjetivo para sistemas de torre solar mediante la integración de inteligencia artificial y computación de altas prestaciones."
+  },
+  "home.cta.project": {
+    "message": "Resumen del proyecto"
+  },
+  "home.cta.research": {
+    "message": "Investigación"
+  },
+  "home.cta.publications": {
+    "message": "Publicaciones"
+  },
+  "home.panel.title": {
+    "message": "Para la comunidad termosolar y responsables de la toma de decisiones"
+  },
+  "home.panel.b1": {
+    "message": "Objetivos claros, plan de trabajo y cronograma"
+  },
+  "home.panel.b2": {
+    "message": "Herramientas abiertas y flujos reproducibles"
+  },
+  "home.panel.b3": {
+    "message": "Resultados, publicaciones y entregables públicos"
+  },
+  "home.panel.link": {
+    "message": "Empezar aquí →"
   }
 }
