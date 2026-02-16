@@ -7,7 +7,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import Translate from '@docusaurus/Translate';
 import styles from './index.module.css';
 
-function Stat({ value, label }) {
+function Stat({value, label}) {
   return (
     <div className={styles.stat}>
       <div className={styles.statValue}>{value}</div>
@@ -16,7 +16,7 @@ function Stat({ value, label }) {
   );
 }
 
-function Card({ title, description, href, tag }) {
+function Card({title, description, href, tag}) {
   return (
     <Link className={styles.card} to={href} aria-label={`${title}: ${description}`}>
       <div className={styles.cardHeader}>
@@ -50,22 +50,170 @@ function FundingStrip() {
         href="https://www.aei.gob.es/"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="MICIU and AEI (opens in a new tab)"
-      >
+        aria-label="MICIU and AEI (opens in a new tab)">
         <img className={styles.fundingLogo} src={logo} alt="MICIU and AEI" />
       </a>
     </div>
   );
 }
 
+function usePrefersReducedMotion() {
+  const [reduced, setReduced] = React.useState(false);
+
+  React.useEffect(() => {
+    if (typeof window === 'undefined' || !window.matchMedia) return;
+
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const onChange = () => setReduced(Boolean(media.matches));
+
+    onChange();
+
+    if (media.addEventListener) {
+      media.addEventListener('change', onChange);
+      return () => media.removeEventListener('change', onChange);
+    }
+
+    // Safari fallback
+    media.addListener(onChange);
+    return () => media.removeListener(onChange);
+  }, []);
+
+  return reduced;
+}
+
+/**
+ * Cross-fade carousel:
+ * - Two layers (base + incoming) with opacity transition.
+ * - Preloads the next image before fading in.
+ * - Respects prefers-reduced-motion (no rotation, no transitions).
+ */
+function HeroPhotoCard() {
+  const img1 = useBaseUrl('/img/psa/psa-01.webp');
+  const img2 = useBaseUrl('/img/psa/psa-02.webp');
+  const img3 = useBaseUrl('/img/psa/psa-03.webp');
+  const img4 = useBaseUrl('/img/psa/psa-04.webp');
+  const img5 = useBaseUrl('/img/psa/psa-05.webp');
+
+  const images = React.useMemo(() => [img1, img2, img3, img4, img5], [img1, img2, img3, img4, img5]);
+
+  const prefersReducedMotion = usePrefersReducedMotion();
+
+  const FADE_MS = 650;
+  const ROTATE_MS = 5000;
+
+  const [baseIndex, setBaseIndex] = React.useState(0);
+  const [incomingIndex, setIncomingIndex] = React.useState(0);
+  const [showIncoming, setShowIncoming] = React.useState(false);
+
+  const intervalRef = React.useRef(null);
+  const fadeTimeoutRef = React.useRef(null);
+
+  React.useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    // Safety cleanup
+    const clearTimers = () => {
+      if (intervalRef.current) {
+        window.clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+      if (fadeTimeoutRef.current) {
+        window.clearTimeout(fadeTimeoutRef.current);
+        fadeTimeoutRef.current = null;
+      }
+    };
+
+    clearTimers();
+
+    // No animation/rotation if reduced motion or insufficient images
+    if (prefersReducedMotion || images.length < 2) {
+      setBaseIndex(0);
+      setIncomingIndex(0);
+      setShowIncoming(false);
+      return clearTimers;
+    }
+
+    intervalRef.current = window.setInterval(() => {
+      const next = (baseIndex + 1) % images.length;
+
+      // Preload next image before fading
+      const preloader = new window.Image();
+      preloader.src = images[next];
+
+      preloader.onload = () => {
+        setIncomingIndex(next);
+        setShowIncoming(true);
+
+        // After fade completes, promote incoming to base
+        fadeTimeoutRef.current = window.setTimeout(() => {
+          setBaseIndex(next);
+          setShowIncoming(false);
+        }, FADE_MS);
+      };
+
+      // If preload errors, just hard-swap safely (still no crash)
+      preloader.onerror = () => {
+        setBaseIndex(next);
+        setIncomingIndex(next);
+        setShowIncoming(false);
+      };
+    }, ROTATE_MS);
+
+    return clearTimers;
+    // We intentionally depend on baseIndex so the “next” calculation stays correct.
+  }, [baseIndex, images, prefersReducedMotion]);
+
+  const baseSrc = images[baseIndex] || images[0];
+  const incomingSrc = images[incomingIndex] || images[0];
+
+  return (
+    <div className={styles.heroPhotoCard}>
+      {/* Base image */}
+      <img
+        src={baseSrc}
+        alt="CIEMAT-PSA solar tower systems"
+        className={clsx(styles.heroPhoto, styles.heroPhotoBase)}
+        draggable="false"
+        loading="eager"
+      />
+
+      {/* Incoming image (cross-fade layer) */}
+      {!prefersReducedMotion ? (
+        <img
+          src={incomingSrc}
+          alt=""
+          aria-hidden="true"
+          className={clsx(
+            styles.heroPhoto,
+            styles.heroPhotoIncoming,
+            showIncoming && styles.heroPhotoIncomingVisible
+          )}
+          draggable="false"
+        />
+      ) : null}
+
+      <div className={styles.heroPhotoOverlay} />
+
+      <div className={styles.heroPhotoCaption}>
+        <div className={styles.heroPhotoTitle}>CIEMAT – PSA</div>
+        <div className={styles.heroPhotoSubtitle}>Solar tower systems</div>
+        <div className={styles.heroPhotoLinkRow}>
+          <Link to="/docs/project/objectives" className={styles.heroPhotoLink}>
+            View project overview →
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
+  const {siteConfig} = useDocusaurusContext();
 
   return (
     <Layout
       title={siteConfig.title}
-      description="AI and HPC to enable integral, multi-objective optimisation of solar tower systems"
-    >
+      description="AI and HPC to enable integral, multi-objective optimisation of solar tower systems">
       <header className={styles.hero} aria-label="Project overview hero">
         <div className={clsx('container', styles.heroInner)}>
           <FundingStrip />
@@ -77,8 +225,8 @@ export default function Home() {
 
             <p className={styles.officialTitle}>
               <Translate id="home.officialTitle">
-                Towards disruptive innovation in advanced solar energy systems through artificial
-                intelligence and high performance computing.
+                Towards disruptive innovation in advanced solar energy systems through artificial intelligence and
+                high performance computing.
               </Translate>
             </p>
 
@@ -90,7 +238,8 @@ export default function Home() {
 
             <p className={styles.heroSubtitle}>
               <Translate id="home.heroSubtitle">
-                AI-HPC4CST advances integral, multi-objective optimization of solar tower systems by combining artificial intelligence with high-performance computing.
+                AI-HPC4CST advances integral, multi-objective optimization of solar tower systems by combining
+                artificial intelligence with high-performance computing.
               </Translate>
             </p>
 
@@ -113,22 +262,8 @@ export default function Home() {
             </div>
           </div>
 
-          <aside className={styles.heroRight} aria-label="Audience summary">
-            <div className={styles.heroPanel}>
-              <div className={styles.panelTitle} id="audience-panel-title">
-                <Translate id="home.panel.title">For CST practitioners & decision makers</Translate>
-              </div>
-              <ul className={styles.panelList} aria-labelledby="audience-panel-title">
-                <li><Translate id="home.panel.b1">Clear objectives, work plan, and timeline</Translate></li>
-                <li><Translate id="home.panel.b2">Open tools and reproducible workflows</Translate></li>
-                <li><Translate id="home.panel.b3">Results, publications, and public deliverables</Translate></li>
-              </ul>
-              <div className={styles.panelFooter}>
-                <Link to="/docs/project/objectives">
-                  <Translate id="home.panel.link">Start here →</Translate>
-                </Link>
-              </div>
-            </div>
+          <aside className={styles.heroRight} aria-label="Hero image">
+            <HeroPhotoCard />
           </aside>
         </div>
       </header>
@@ -136,7 +271,9 @@ export default function Home() {
       <main className={styles.main}>
         <section className={clsx('container', styles.section)} aria-labelledby="why-title">
           <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle} id="why-title">Why it matters</h2>
+            <h2 className={styles.sectionTitle} id="why-title">
+              Why it matters
+            </h2>
             <p className={styles.sectionSubtitle}>
               CST optimization is high-dimensional and multi-objective, with expensive coupled simulations.
               AI-HPC4CST targets faster iteration, better designs, and transparent reproducibility.
@@ -168,7 +305,9 @@ export default function Home() {
         <section className={styles.band} aria-labelledby="tools-title">
           <div className={clsx('container', styles.section)}>
             <div className={styles.sectionHeader}>
-              <h2 className={styles.sectionTitle} id="tools-title">Tools ecosystem</h2>
+              <h2 className={styles.sectionTitle} id="tools-title">
+                Tools ecosystem
+              </h2>
               <p className={styles.sectionSubtitle}>
                 The main site provides project context. Each tool has its own blog and documentation hub.
               </p>
@@ -180,8 +319,7 @@ export default function Home() {
                 href="https://cst-modelling-tools.github.io/tonatiuhpp-blog/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Tonatiuh++ Development Blog (opens in a new tab)"
-              >
+                aria-label="Tonatiuh++ Development Blog (opens in a new tab)">
                 <div className={styles.toolName}>Tonatiuh++</div>
                 <div className={styles.toolDesc}>CST ray-tracing & modelling toolkit blog</div>
                 <div className={styles.toolCta}>Open blog →</div>
@@ -198,7 +336,9 @@ export default function Home() {
 
         <section className={clsx('container', styles.section)} aria-labelledby="results-title">
           <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle} id="results-title">Results & dissemination</h2>
+            <h2 className={styles.sectionTitle} id="results-title">
+              Results & dissemination
+            </h2>
             <p className={styles.sectionSubtitle}>
               Publications, software releases, and events will be collected and updated throughout the project.
             </p>
