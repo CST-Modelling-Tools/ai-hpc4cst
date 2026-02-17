@@ -5,92 +5,86 @@ title: Research Overview
 
 ## Scientific Vision
 
-AI-HPC4CST aims to transform the design and optimisation of **central receiver solar tower systems (CST)** through the systematic integration of:
+AI-HPC4CST advances the integration of Artificial Intelligence (AI) and High-Performance Computing (HPC) to enable large-scale, simulation-driven optimisation of complex engineering systems.
 
-- Artificial Intelligence (AI)
-- High-Performance Computing (HPC)
-- Physics-based simulation
-- Multi-objective optimisation
-
-Solar tower systems involve tightly coupled optical, thermal, structural and operational constraints. Traditional optimisation approaches often rely on sequential or partially decoupled strategies. AI-HPC4CST proposes a shift toward **integral, simulation-driven, multi-objective optimisation frameworks**.
+The project is centred on solar tower technology as a computationally demanding and industrially relevant case study. However, its scientific ambition extends beyond CST to problems characterised by high-dimensional design spaces, strong physical coupling, and simulation-in-the-loop optimisation.
 
 ---
 
 ## Core Research Hypothesis
 
-The central hypothesis of the project is:
+The central hypothesis of AI-HPC4CST is:
 
-> The combined use of AI-based surrogate modelling and HPC-accelerated optimisation can enable integral design strategies that significantly improve performance, reduce computational cost, and enhance reproducibility in CST systems.
+> Advanced AI-enhanced optimisation strategies, combined with scalable HPC workflows, enable integral and multi-objective optimisation of complex systems beyond the practical limits of conventional deterministic approaches.
 
-The project investigates how machine learning models can approximate expensive simulations while maintaining physical consistency, and how HPC can scale optimisation workflows to realistic design spaces.
+Traditional optimisation techniques struggle with nonlinear behaviour, local minima, and the computational cost of multi-physics simulations. The project investigates stochastic, evolutionary, and AI-driven optimisation strategies capable of navigating such environments efficiently.
 
 ---
 
-## Research Pillars
+## Research Focus Areas
 
-The research programme is structured around three interconnected pillars:
+The research programme integrates three complementary domains.
 
-### 1. Multi-objective Optimisation
+### 1. Integral System Optimisation
 
-- Simultaneous optimisation of heliostat field layout, receiver design, and system-level performance
-- Integration of optical, thermal and operational constraints
-- Exploration of high-dimensional design spaces
-- Trade-off analysis between efficiency, cost, and operational robustness
+- Formulation of engineering design as high-dimensional optimisation problems  
+- Multi-objective optimisation under physical and operational constraints  
+- System-level integration of coupled phenomena  
+- Exploration of complex design spaces through simulation-based evaluation  
 
-### 2. AI-Based Surrogate Models
+Solar tower systems provide a representative and challenging application domain for this approach.
 
-- Development of machine learning surrogates for computationally expensive simulations
-- Physics-informed modelling approaches
-- Uncertainty quantification and reliability assessment
-- Hybrid workflows combining simulation and learning
+---
 
-### 3. HPC-Accelerated Workflows
+### 2. AI-Enhanced Optimisation Strategies
 
-- Parallel execution of large simulation ensembles
-- Scalable optimisation strategies
-- Efficient sampling and adaptive refinement
-- Reproducible computational pipelines
+- Stochastic and evolutionary optimisation algorithms  
+- Neuroevolution and deep learning approaches for design exploration  
+- Hybrid strategies balancing simulation cost and optimisation efficiency  
+- Multi-objective optimisation in strongly nonlinear environments  
+
+AI techniques are embedded within optimisation workflows to improve exploration capability and solution quality.
+
+---
+
+### 3. HPC-Enabled Computational Frameworks
+
+- Parallel simulation and optimisation loops  
+- Scalable execution of computationally intensive models  
+- Integration of AI techniques within high-performance environments  
+- Reproducible and modular computational infrastructures  
+
+HPC enables systematic exploration of design spaces that would otherwise be computationally prohibitive.
 
 ---
 
 ## Methodological Approach
 
-AI-HPC4CST adopts an **integrated computational workflow**, including:
+AI-HPC4CST adopts a simulation-in-the-loop optimisation paradigm:
 
-1. High-fidelity ray-tracing and system simulations  
-2. Data generation for surrogate training  
-3. AI model development and validation  
-4. Multi-objective optimisation loops  
-5. HPC scaling and performance evaluation  
+1. A parameterised system configuration defines a candidate design  
+2. High-fidelity simulations compute relevant performance metrics  
+3. AI-enhanced optimisation algorithms guide exploration of the design space  
+4. HPC resources ensure scalability and computational feasibility  
 
-The project emphasizes:
-
-- Reproducibility
-- Open tools and transparent workflows
-- Modular software architectures
-- Scientific validation against realistic pilot problems
+This black-box abstraction allows optimisation strategies to operate independently of internal simulation details while iteratively improving system performance.
 
 ---
 
 ## Expected Scientific Contributions
 
-The project aims to contribute:
+The project aims to deliver:
 
-- New methodologies for integral CST optimisation
-- Hybrid AI–simulation design frameworks
-- Improved computational efficiency in large-scale design exploration
-- Open-source tools and reproducible workflows
-- Publications in high-impact energy and computational science venues
+- Integral optimisation methodologies for complex engineered systems  
+- AI-enhanced multi-objective optimisation strategies  
+- Scalable HPC-enabled computational frameworks  
+- Open and reproducible research tools  
+- A forward-looking research roadmap for AI–HPC integration in energy systems  
 
 ---
 
-## Positioning within the CST Community
+## Broader Impact
 
-AI-HPC4CST contributes to advancing:
+While solar tower systems serve as the primary demonstrator, the methodological advances of AI-HPC4CST apply to a broader class of problems requiring large-scale, simulation-driven optimisation.
 
-- Next-generation solar tower system design
-- Data-driven engineering in renewable energy
-- Integration of AI in high-fidelity simulation environments
-- Scalable optimisation methods for complex energy systems
-
-By combining domain expertise in CST with AI and HPC, the project seeks to bridge the gap between theoretical optimisation frameworks and practical, scalable system design.
+By bridging AI, HPC, and renewable energy engineering, the project contributes to advancing next-generation computational design methodologies.

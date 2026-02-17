@@ -5,7 +5,9 @@ title: Project Overview
 
 ## AI-HPC4CST
 
-**AI-HPC4CST** is an ATRAE research project focused on transforming the design and optimisation of concentrating solar thermal (CST) solar tower systems through the combined use of artificial intelligence (AI) and high-performance computing (HPC).
+**AI-HPC4CST** is an ATRAE research project advancing the integration of Artificial Intelligence (AI) and High-Performance Computing (HPC) for large-scale, simulation-driven optimisation of complex energy systems.
+
+Solar tower technology serves as a demanding and industrially relevant application domain in which these methodologies are developed, tested, and validated.
 
 ---
 
@@ -17,42 +19,51 @@ title: Project Overview
 
 ## Motivation
 
-The optimisation of solar tower systems involves:
+Many advanced engineering systems require optimisation within high-dimensional design spaces evaluated through computationally intensive simulations.
 
-- High-dimensional design spaces  
-- Coupled multi-physics simulations  
-- Strongly nonlinear system interactions  
-- Multi-objective trade-offs  
+Such problems are characterised by:
 
-Traditional approaches are computationally expensive and difficult to scale.
+- Strongly coupled multi-physics behaviour  
+- Nonlinear system interactions  
+- Multi-objective performance trade-offs  
+- Repeated simulation-based evaluation  
 
-AI-HPC4CST addresses these challenges by integrating:
+Under these conditions, conventional deterministic optimisation techniques face significant limitations in scalability and robustness.
 
-- AI-based surrogate modelling  
-- Multi-objective optimisation methods  
-- High-performance computing infrastructures  
-- Reproducible computational workflows  
+AI-HPC4CST addresses these challenges by developing and integrating:
+
+- AI-enhanced stochastic and evolutionary optimisation strategies  
+- Simulation-in-the-loop optimisation frameworks  
+- Scalable high-performance computational workflows  
+- Reproducible and modular research infrastructures  
+
+Solar tower systems provide a representative and technically demanding context in which these approaches are applied and validated.
+
+---
+
+## Scientific Scope
+
+The project focuses on:
+
+- Integral optimisation of complex engineering systems  
+- Integration of AI techniques within multi-objective search processes  
+- Scalable HPC-enabled execution of simulation-based evaluation  
+- Systematic exploration of high-dimensional parameter spaces  
+
+While centred on solar tower systems as a demonstrator, the methodological developments are relevant to a broader class of simulation-driven optimisation problems in complex energy systems and subsystems.
 
 ---
 
 ## Project Structure
 
-The project is organised around:
+AI-HPC4CST is organised around:
 
-- Clear scientific objectives  
-- Defined work packages  
-- A structured timeline  
-- Open dissemination and reproducibility  
+- Clearly defined scientific objectives  
+- Coordinated work packages covering management, dissemination, technological development, pilot validation, and long-term roadmap definition  
+- A structured 48-month timeline  
+- Open science and reproducible research practices  
 
-You can explore:
-
-- **Objectives**
-- **Work Packages**
-- **Timeline**
-- **Funding**
-- **Research Approach**
-- **Results & Software**
-- **Team & Collaborators**
+The integration of AI and HPC is progressively developed, applied to defined pilot problems, and consolidated into a forward-looking research roadmap.
 
 ---
 
@@ -60,15 +71,18 @@ You can explore:
 
 AI-HPC4CST addresses:
 
-- The national and international CST research community  
-- Experts in AI and HPC applied to energy systems  
+- Researchers in concentrating solar thermal (CST) and advanced solar energy systems  
+- Experts in artificial intelligence, metaheuristic optimisation, and computational science  
+- High-performance computing specialists  
+- Researchers and engineers interested in optimisation of complex engineering systems  
+- Scientists working on simulation-driven optimisation of energy systems and subsystems  
 - Policy makers and public research funding bodies  
-- Technology developers and industrial stakeholders  
+- Industrial stakeholders exploring advanced optimisation technologies  
 
 ---
 
 ## Funding
 
-AI-HPC4CST is funded under the ATRAE programme:
+AI-HPC4CST is funded under the ATRAE programme of the Spanish Ministry of Science, Innovation and Universities (MICIU) through the Agencia Estatal de Investigación (AEI).
 
-> Grant ATR2024-155003 funded by MICIU/AEI/10.13039/501100011033.
+Grant reference: **ATR2024-155003 funded by MICIU/AEI/10.13039/501100011033.**

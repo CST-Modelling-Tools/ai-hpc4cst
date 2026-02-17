@@ -5,45 +5,58 @@ title: Collaborators & Partners
 
 ## Collaborators & Partners
 
-AI-HPC4CST actively promotes scientific collaboration at national and international levels.
+AI-HPC4CST promotes scientific collaboration at national and international levels in the fields of optimisation, artificial intelligence, high-performance computing, and solar energy systems.
+
+Collaboration is essential to ensure methodological robustness, technological relevance, and broad scientific impact.
 
 ---
 
 ## Academic Collaborations
 
-The project welcomes collaboration with:
+The project engages with researchers working on:
 
-- CST modelling researchers  
-- AI and optimisation specialists  
-- HPC infrastructure experts  
-- Energy systems analysts  
+- Simulation-driven optimisation  
+- Metaheuristic and evolutionary algorithms  
+- High-performance computing infrastructures  
+- Concentrating solar thermal modelling  
+- Complex energy systems analysis  
 
-Collaborations may include:
+Collaborative activities may include:
 
-- Joint publications  
-- Co-supervision of students  
-- Research visits  
-- Participation in scientific events  
+- Joint research publications  
+- Research visits and technical exchanges  
+- Participation in workshops and scientific events  
+- Co-supervision of graduate students  
 
 ---
 
-## Institutional & Strategic Partners
+## International Technical Advisory Board (ITAB)
 
-AI-HPC4CST may interact with:
+AI-HPC4CST is supported by an International Technical Advisory Board composed of recognised experts in relevant fields.
+
+The ITAB provides:
+
+- Strategic scientific guidance  
+- External evaluation of research progress  
+- Feedback on methodological development and validation  
+
+This structure strengthens scientific quality and international visibility.
+
+---
+
+## Institutional and Strategic Interaction
+
+The project interacts with:
 
 - Public research institutions  
-- National laboratories  
-- Energy agencies  
-- Technology developers  
+- National and European research infrastructures  
+- Energy research centres  
+- Technology-oriented stakeholders  
+
+Such interactions support knowledge transfer and long-term impact.
 
 ---
 
 ## Open Collaboration
 
-Researchers interested in collaboration are encouraged to contact the Principal Investigator via the Contact page.
-
----
-
-## Funding Acknowledgement
-
-> Grant ATR2024-155003 funded by MICIU/AEI/10.13039/501100011033.
+Researchers and institutions interested in collaboration are encouraged to contact the project team via the Contact page.

@@ -5,94 +5,92 @@ title: Work Packages
 
 ## Work Packages Overview
 
-AI-HPC4CST is structured into coordinated work packages (WPs) that collectively address methodological development, computational implementation, validation, and dissemination.
+AI-HPC4CST is organised into five coordinated Work Packages (WPs) that structure the project from governance and dissemination to technological development, pilot applications, and long-term strategic impact.
 
-Each work package contributes to the development of an integrated AI–HPC optimisation framework for solar tower systems.
-
----
-
-## WP1 – Foundations and System Modelling
-
-**Objective:** Establish the physical and computational foundations of the project.
-
-This work package focuses on:
-
-- Definition of representative solar tower configurations  
-- Identification of key performance indicators (KPIs)  
-- Coupling strategies between optical, thermal, and system-level models  
-- Definition of optimisation variables and constraints  
-
-WP1 provides the high-fidelity simulation backbone required for subsequent AI and optimisation developments.
+Together, these work packages ensure rigorous execution, development of AI and HPC methodologies, validation through solar tower optimisation challenges, and consolidation of future research directions.
 
 ---
 
-## WP2 – Artificial Intelligence and Surrogate Modelling
+## WP1 – Project Management
 
-**Objective:** Develop AI-based surrogate models for accelerated simulation.
+WP1 ensures effective coordination and strategic alignment of all project activities throughout the 48-month duration.
 
-Main tasks include:
+Its activities include:
 
-- Dataset generation from high-fidelity CST simulations  
-- Design and training of machine learning surrogate models  
-- Uncertainty-aware and physics-informed modelling strategies  
-- Validation against reference simulations  
+- Coordination of scientific and technical work  
+- Monitoring of progress and milestones  
+- Interaction with the International Technical Advisory Board (ITAB)  
+- Strategic networking with relevant institutions and stakeholders  
 
-The goal is to significantly reduce computational cost while preserving predictive accuracy and interpretability.
-
----
-
-## WP3 – High-Performance Computing and Scalable Workflows
-
-**Objective:** Enable large-scale optimisation through HPC integration.
-
-Key activities:
-
-- Parallelisation strategies for simulation workflows  
-- Distributed optimisation and batch evaluation frameworks  
-- Efficient sampling and exploration of high-dimensional design spaces  
-- Performance benchmarking and scalability analysis  
-
-WP3 ensures that the optimisation framework can scale to realistic industrial design scenarios.
+This work package guarantees coherent execution and sustained project momentum.
 
 ---
 
-## WP4 – Multi-Objective Optimisation and Decision Frameworks
+## WP2 – Dissemination and Communication
 
-**Objective:** Integrate AI and HPC into a unified optimisation strategy.
+WP2 ensures that project results are communicated effectively to the scientific community, industry stakeholders, policymakers, and society.
 
-This work package addresses:
+Key activities include:
 
-- Multi-objective optimisation algorithms  
-- Trade-off analysis (performance–cost–reliability)  
-- Constraint handling and robustness strategies  
-- Integration of surrogate models within optimisation loops  
+- Development of a dissemination and exploitation strategy  
+- Implementation of open science practices  
+- Scientific publications, webinars, and outreach actions  
+- Identification and protection of potentially exploitable results  
 
-WP4 delivers the core optimisation engine of the project.
-
----
-
-## WP5 – Demonstration, Validation and Impact
-
-**Objective:** Validate the framework and maximise scientific and societal impact.
-
-Activities include:
-
-- Application to representative solar tower case studies  
-- Comparative analysis with conventional design methodologies  
-- Publication of scientific results  
-- Release of tools and documentation  
-- Dissemination and stakeholder engagement  
-
-This work package ensures scientific excellence, transparency, and real-world relevance.
+This work package reinforces transparency, reproducibility, and long-term impact.
 
 ---
 
-## Cross-Cutting Activities
+## WP3 – AI and HPC
 
-Across all work packages, the project emphasises:
+WP3 focuses on the exploration, selection, and implementation of Artificial Intelligence (AI) and High-Performance Computing (HPC) technologies within the project framework.
 
-- Reproducibility and open science principles  
-- Documentation and software sustainability  
-- Interdisciplinary integration between AI, HPC, and solar thermal engineering  
+Core activities include:
 
-The coordinated execution of these work packages enables AI-HPC4CST to deliver a coherent and impactful optimisation framework for next-generation solar tower systems.
+- Definition of computational procedures and optimisation workflows  
+- Evaluation of AI and HPC approaches suitable for large-scale optimisation  
+- Implementation and integration of selected technologies  
+- Development of associated open-source tools  
+
+This work package provides the technological backbone of AI-HPC4CST.
+
+---
+
+## WP4 – Solution of Pilot Problems
+
+WP4 applies the developed AI and HPC framework to defined pilot problems in solar tower systems.
+
+Its activities focus on:
+
+- Standardisation and streamlining of optimisation workflows  
+- Systematic search for solutions to selected optimisation challenges  
+- Validation of the developed framework under realistic engineering conditions  
+
+This work package demonstrates the practical effectiveness of the project’s methodologies.
+
+---
+
+## WP5 – Research Road Map
+
+WP5 consolidates the knowledge generated during the project and defines future research directions.
+
+It includes:
+
+- Documentation of lessons learned  
+- Development of a strategic research roadmap  
+- Identification of emerging opportunities for continued innovation  
+
+This work package ensures that AI-HPC4CST delivers not only immediate scientific advances but also a long-term vision for the evolution of AI-enhanced solar energy systems.
+
+---
+
+## Integrated Perspective
+
+The coordinated execution of these five work packages enables:
+
+- Robust project governance  
+- Development and deployment of advanced AI and HPC optimisation technologies  
+- Demonstration through solar tower pilot problems  
+- Long-term strategic positioning in AI-enhanced energy system optimisation  
+
+Together, they provide a coherent framework for advancing large-scale, simulation-driven optimisation in solar tower systems.

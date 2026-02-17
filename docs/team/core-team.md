@@ -5,36 +5,40 @@ title: Core Team
 
 ## Core Team
 
-AI-HPC4CST is led by an ATRAE Principal Investigator and supported by a research team dedicated to advancing AI and HPC methodologies for CST systems.
+AI-HPC4CST is led by an ATRAE Principal Investigator and supported by a doctoral researcher dedicated to advancing AI-enhanced optimisation and high-performance computational methodologies for complex energy systems.
+
+The team combines expertise in artificial intelligence, metaheuristic optimisation, high-performance computing, and concentrating solar thermal technologies.
 
 ---
 
 ## Principal Investigator
 
-**[Full Name]**  
-ATRAE Researcher  
-[Institution Name]  
-[Department / Research Unit]
+**Manuel Jesús Blanco Muriel, PhD., Dr.Ing.**  
+ATRAE Distinguished Researcher  
+CIEMAT - Plataforma Solar de Almería
 
-Research areas:
+Research interests include:
 
-- Artificial intelligence for engineering systems  
-- Multi-objective optimisation  
-- High-performance computing  
-- Concentrating solar thermal systems  
+- Simulation-driven optimisation  
+- Metaheuristic and multi-objective optimisation methods  
+- Integration of AI within engineering design workflows  
+- High-performance computational frameworks  
+- Solar tower system modelling and optimisation  
+
+The Principal Investigator leads the scientific direction of the project and oversees integration of AI and HPC methodologies within the optimisation framework.
 
 ---
 
-## Research Team
+## Doctoral Researcher
 
-The project team may include:
+The project includes a doctoral researcher focused on:
 
-- Postdoctoral researchers  
-- PhD candidates  
-- Research assistants  
-- Technical support staff  
+- Implementation of AI-enhanced optimisation strategies  
+- Integration of optimisation workflows within HPC environments  
+- Development and validation of pilot optimisation problems  
+- Reproducible computational research practices  
 
-Details will be updated as team members join the project.
+This role contributes directly to the technological development and validation phases of the project.
 
 ---
 
@@ -46,8 +50,4 @@ AI-HPC4CST is hosted at:
 [Department / Research Unit]  
 [City, Country]
 
----
-
-## Funding Acknowledgement
-
-> Grant ATR2024-155003 funded by MICIU/AEI/10.13039/501100011033.
+The host institution provides established expertise in solar energy systems, computational modelling, and research infrastructure supporting high-performance computing.

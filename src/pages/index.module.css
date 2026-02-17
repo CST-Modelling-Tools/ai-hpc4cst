@@ -121,9 +121,10 @@
 }
 
 .heroSubtitle {
-  font-size: 1.03rem;
-  opacity: 0.9;
-  max-width: 58ch;
+  font-size: 1.06rem;
+  line-height: 1.55;
+  opacity: 0.92;
+  max-width: 72ch;
   margin: 0 0 1.05rem;
 }
 

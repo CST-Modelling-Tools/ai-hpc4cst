@@ -5,38 +5,88 @@ title: Objectives
 
 ## Project Objectives
 
-**AI-HPC4CST** (Towards disruptive innovation in advanced solar energy systems through artificial intelligence and high-performance computing) aims to transform the design and optimisation of solar tower systems through the integration of artificial intelligence (AI) and high-performance computing (HPC).
+**AI-HPC4CST** (Towards disruptive innovation in advanced solar energy systems through artificial intelligence and high-performance computing) aims to advance the state of the art in large-scale optimisation of complex engineering systems through the development of novel metaheuristic optimisation strategies accelerated by high-performance computing (HPC).
 
-The project addresses the growing complexity of concentrating solar tower (CST) systems, where field layout, receiver design, control strategies, and operational constraints are strongly coupled and computationally expensive to evaluate.
-
-### General Objective
-
-To develop an integral, simulation-driven optimisation framework for solar tower systems that combines:
-
-- Artificial intelligence for surrogate modelling and advanced optimisation  
-- High-performance computing for scalable and accelerated simulation  
-- Multi-objective methodologies for performance–cost–reliability trade-offs  
-
-The ultimate goal is to enable faster design cycles, improved system-level performance, and transparent, reproducible optimisation workflows.
+While the project uses concentrating solar tower (CST) technology as a high-impact and highly complex case study, its methodological developments are designed to be generic and applicable to any system characterised by a large number of optimisable parameters.
 
 ---
 
-## Specific Objectives
+## General Objective
 
-### 1. Develop AI-driven surrogate models
-Create and validate machine learning models capable of approximating high-fidelity CST simulations while preserving physical consistency and interpretability.
+To develop a **generic, simulation-driven optimisation framework** capable of efficiently exploring very high-dimensional design spaces through advanced metaheuristic algorithms and scalable HPC workflows.
 
-### 2. Enable large-scale optimisation through HPC
-Design and deploy scalable workflows that leverage high-performance computing to explore high-dimensional design spaces efficiently.
+The framework targets systems that satisfy three fundamental conditions:
 
-### 3. Integrate multi-objective optimisation strategies
-Formulate optimisation frameworks capable of balancing optical performance, thermal efficiency, cost, reliability, and operational constraints.
+1. The system configuration can be defined by a set of parameters.
+2. A deterministic instantiation process can generate a physical model from a given parameter set and evaluate its performance metrics.
+3. The mapping between parameters and fitness metrics can be treated as a black-box function by the optimisation algorithm.
 
-### 4. Ensure reproducibility and open science
-Provide open tools, documented workflows, and dissemination materials that facilitate transparency and reuse by the research and industrial community.
+Under this abstraction, the optimisation strategy focuses exclusively on identifying optimal regions of the multidimensional design space, without requiring internal knowledge of the underlying physical modelling process.
 
-### 5. Demonstrate impact through pilot case studies
-Validate the developed methods on representative solar tower configurations and realistic operational scenarios.
+---
+
+## Scientific and Technical Objectives
+
+### 1. Develop Advanced Metaheuristic Optimisation Algorithms
+
+Design and implement novel and hybrid metaheuristic strategies capable of:
+
+- Efficient exploration of very high-dimensional parameter spaces  
+- Handling strong coupling between variables  
+- Managing multi-objective trade-offs  
+- Maintaining robustness in computationally expensive optimisation environments  
+
+The emphasis is on integral optimisation strategies rather than surrogate modelling approaches.
+
+---
+
+### 2. Build a Generic Black-Box Optimisation Framework
+
+Create a modular optimisation architecture that:
+
+- Decouples optimisation algorithms from physical simulation models  
+- Allows seamless integration of different system models  
+- Supports single- and multi-objective optimisation  
+- Enables scalability across heterogeneous HPC infrastructures  
+
+This framework is designed to be reusable across engineering domains beyond solar energy.
+
+---
+
+### 3. Leverage High-Performance Computing for Large-Scale Optimisation
+
+Develop scalable workflows that:
+
+- Parallelise simulation-driven optimisation  
+- Exploit distributed and hybrid HPC architectures  
+- Reduce time-to-solution for complex optimisation problems  
+- Enable systematic exploration of large design spaces  
+
+HPC is not used merely for acceleration, but as an enabling technology for solving optimisation problems previously considered intractable.
+
+---
+
+### 4. Demonstrate Methodological Impact on Solar Tower Technology
+
+Apply the developed framework to the optimisation of the subsystem responsible for converting radiant energy into thermal energy in solar tower systems, including:
+
+- Heliostat field configuration  
+- Tower geometry  
+- Receiver design  
+
+This subsystem is selected as a representative example of a highly coupled, multi-parameter and multiphysics engineering system.
+
+---
+
+### 5. Establish Transferability Beyond CST
+
+Validate that the optimisation framework can be adapted to other engineering systems characterised by:
+
+- Parametric configurability  
+- Simulation-based performance evaluation  
+- High-dimensional optimisation challenges  
+
+The project positions solar tower systems as a demonstrator of a broader class of optimisation problems.
 
 ---
 
@@ -44,11 +94,10 @@ Validate the developed methods on representative solar tower configurations and 
 
 AI-HPC4CST aims to:
 
-- Reduce computational cost of system-level optimisation  
-- Improve decision-making in CST design  
-- Enable systematic exploration of disruptive design configurations  
-- Strengthen the integration of AI and HPC in renewable energy engineering  
+- Enable fast optimisation of systems with hundreds or thousands of design variables  
+- Advance the theoretical and practical capabilities of metaheuristic optimisation  
+- Reduce barriers to large-scale engineering optimisation  
+- Strengthen Spain’s leadership in AI-driven scientific computing  
+- Contribute to the competitiveness of solar thermal technologies  
 
-The project contributes to advancing solar thermal energy as a competitive and reliable renewable energy technology.
-# Objectives
-Content coming soon.
+By combining advanced optimisation theory with high-performance computing, AI-HPC4CST contributes to the next generation of simulation-driven engineering design.

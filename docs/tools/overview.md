@@ -5,118 +5,112 @@ title: Tools Overview
 
 ## Tools Ecosystem
 
-AI-HPC4CST develops and integrates open tools to enable reproducible, scalable optimisation of solar tower systems.
+AI-HPC4CST develops and integrates computational tools to support large-scale, simulation-driven optimisation of complex energy systems.
 
-The project follows an **open science and open software strategy**:
+The project follows an open science and open software strategy based on:
 
 - Transparent methodologies  
-- Public repositories  
-- Dedicated development blogs  
+- Public repositories where appropriate  
+- Version-controlled development  
 - Reproducible computational workflows  
 
-The tools ecosystem is structured so that each major tool has its own documentation hub and development space, while this website provides the overarching project context.
+Rather than a single monolithic application, AI-HPC4CST promotes a modular ecosystem in which optimisation algorithms, simulation engines, and HPC workflows interact through clearly defined interfaces.
 
 ---
 
-## Tonatiuh++
+## Simulation and Modelling Tools
 
-Tonatiuh++ is a core modelling and ray-tracing tool within the CST-Modelling-Tools ecosystem.
+High-fidelity simulation tools form the computational backbone of the optimisation framework.
+
+These tools are responsible for evaluating candidate system configurations through physics-based modelling, including optical and thermal processes relevant to solar tower systems.
+
+### Tonatiuh++
+
+Tonatiuh++ is a ray-tracing and modelling toolkit within the CST-Modelling-Tools ecosystem.
 
 It supports:
 
 - Heliostat field modelling  
-- Ray-tracing simulation  
-- Optical efficiency evaluation  
-- Flux distribution analysis  
+- Optical ray-tracing simulations  
+- Evaluation of flux distribution and optical performance  
 
 Within AI-HPC4CST, Tonatiuh++ serves as:
 
-- A simulation backbone for optimisation workflows  
-- A benchmark platform for AI surrogate modelling  
-- A computational workload for HPC integration  
+- A simulation engine within optimisation workflows  
+- A computational workload for scalable HPC execution  
+- A validation platform for AI-enhanced optimisation strategies  
 
-🔗 **Development blog:**  
+🔗 Development blog:  
 https://cst-modelling-tools.github.io/tonatiuhpp-blog/
 
 ---
 
-## AI & Surrogate Modelling Frameworks
+## AI-Enhanced Optimisation Components
 
-AI-HPC4CST develops methodologies for:
+AI-HPC4CST develops and integrates optimisation components designed to operate within simulation-in-the-loop environments.
 
-- Surrogate modelling of expensive simulations  
-- Machine learning–assisted optimisation  
-- Multi-objective optimisation acceleration  
-- Hybrid AI–physics approaches  
+These may include:
 
-These tools are designed to:
+- Stochastic and evolutionary optimisation modules  
+- Multi-objective optimisation frameworks  
+- AI-assisted search strategies  
+- Adaptive exploration mechanisms for high-dimensional design spaces  
 
-- Reduce the number of required full simulations  
-- Enable rapid exploration of design spaces  
-- Support large-scale optimisation on HPC systems  
+The focus is on enhancing optimisation capability rather than replacing physical simulation models.
 
-Where possible, frameworks and workflows will be released openly.
+Where appropriate, these components will be released with documentation and versioned repositories.
 
 ---
 
-## HPC Integration Workflows
+## HPC-Enabled Workflow Integration
 
-A central innovation of AI-HPC4CST is the structured integration of optimisation and HPC execution.
+A key objective of the project is the structured integration of optimisation workflows with high-performance computing resources.
 
 This includes:
 
-- Automated job submission workflows  
-- Parallel evaluation of design candidates  
-- Scalable optimisation pipelines  
-- Performance benchmarking  
+- Parallel evaluation of candidate configurations  
+- Scalable execution of optimisation iterations  
+- Automated coordination between optimisation algorithms and simulation engines  
+- Performance-aware computational strategies  
 
-The objective is not merely to run simulations on HPC systems, but to **design optimisation workflows that are inherently scalable**.
+The goal is to design optimisation workflows that are inherently scalable and robust under increasing computational demand.
 
 ---
 
-## Reproducibility & Workflow Automation
+## Reproducibility and Workflow Automation
 
 All developed tools aim to support:
 
 - Reproducible optimisation experiments  
-- Version-controlled configurations  
-- Documented parameter studies  
-- Transparent data processing pipelines  
+- Documented configuration and parameter settings  
+- Version-controlled optimisation workflows  
+- Transparent data handling and post-processing procedures  
 
-This ensures that:
-
-- Results can be independently verified  
-- Design improvements are traceable  
-- Methodological advances are transferable  
+This ensures that results are verifiable, traceable, and reusable by the broader research community.
 
 ---
 
-## Future Tools
+## Future Developments
 
-The AI-HPC4CST ecosystem is designed to grow.
+As the project progresses, additional software components may include:
 
-Future tools may include:
+- Integrated optimisation libraries  
+- Decision-support and visualisation tools  
+- Extended simulation–optimisation interfaces  
+- Tools supporting large-scale parameter studies  
 
-- Dedicated optimisation libraries  
-- Decision-support interfaces  
-- Visualisation and Pareto-analysis tools  
-- Coupled optical–thermal modelling modules  
-
-Each new tool will follow the same principles:
-
-- Open dissemination  
-- Clear documentation  
-- Reproducible workflows  
+Each new development will follow the same principles of openness, modularity, and reproducibility.
 
 ---
 
 ## Strategic Vision
 
-Rather than a single monolithic software package, AI-HPC4CST promotes a **modular ecosystem**:
+AI-HPC4CST promotes a modular, scalable computational ecosystem in which:
 
-- Specialised tools  
-- Clear interfaces  
-- HPC-ready workflows  
-- AI-enhanced optimisation strategies  
+- Specialised simulation tools  
+- AI-enhanced optimisation algorithms  
+- High-performance computing workflows  
 
-This modularity ensures flexibility, scalability, and long-term sustainability within the CST research community.
+operate together within a unified, simulation-driven optimisation framework.
+
+This approach ensures flexibility, long-term sustainability, and applicability to complex energy systems and related engineering challenges.

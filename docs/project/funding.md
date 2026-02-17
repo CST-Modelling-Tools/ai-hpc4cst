@@ -11,25 +11,21 @@ AI-HPC4CST is funded under the **ATRAE Programme** of the Spanish Ministry of Sc
 
 The project is supported by:
 
-- **Ministerio de Ciencia, Innovación y Universidades (MICIU)**
-- **Agencia Estatal de Investigación (AEI)**
+- Ministerio de Ciencia, Innovación y Universidades (MICIU)  
+- Agencia Estatal de Investigación (AEI)  
 
 ---
 
-## Official Acknowledgement
+## Programme Framework
 
-In accordance with the communication and publicity obligations established by the Agencia Estatal de Investigación, all dissemination materials associated with the project include the corresponding funding acknowledgement and official institutional logos.
+The ATRAE programme promotes the attraction of research talent and the development of high-impact scientific initiatives in Spain.
 
-The funding reference and institutional logos are displayed:
-
-- On the website footer (visible on all pages)
-- On the homepage (visible without scrolling)
-- In scientific publications and dissemination materials derived from the project
+Within this framework, AI-HPC4CST contributes to strengthening Spain’s leadership in advanced solar energy research through the integration of Artificial Intelligence (AI) and High-Performance Computing (HPC) for large-scale optimisation of solar tower systems.
 
 ---
 
-## Programme Context
+## Institutional Commitment
 
-The ATRAE programme supports the attraction of research talent and the development of high-impact scientific projects in Spain. Within this framework, AI-HPC4CST contributes to advancing innovation in advanced solar energy systems through the integration of artificial intelligence and high-performance computing.
+The project is developed at CIEMAT’s Energy Department and the Plataforma Solar de Almería (PSA), leveraging established expertise in concentrating solar thermal technologies and advanced computational research.
 
-The project operates under the scientific and administrative regulations established by the Agencia Estatal de Investigación.
+All scientific outputs, communication materials, and dissemination activities include the corresponding funding acknowledgement and institutional references, ensuring transparency and proper attribution.

@@ -5,115 +5,80 @@ title: HPC Integration
 
 ## High-Performance Computing in AI-HPC4CST
 
-High-performance computing (HPC) is a foundational pillar of AI-HPC4CST.
+High-Performance Computing (HPC) is a structural enabler of simulation-driven optimisation in AI-HPC4CST.
 
-Solar tower system optimisation requires:
+The project addresses optimisation problems in which each candidate design must be evaluated through computationally intensive simulations. When such evaluations are embedded within stochastic or evolutionary search processes, computational demand grows rapidly.
 
-- High-fidelity optical simulations
-- Coupled thermal and system-level models
-- Large design-space exploration
-- Repeated multi-objective optimisation cycles
-
-These tasks are computationally intensive and often infeasible without scalable computing strategies.
+HPC provides the scalability required to make large-scale, multi-objective optimisation feasible.
 
 ---
 
-## Why HPC is Essential
+## HPC in Simulation-Driven Optimisation
 
-CST optimisation is:
+AI-HPC4CST adopts a simulation-in-the-loop optimisation paradigm in which:
 
-- High-dimensional
-- Multi-objective
-- Constrained
-- Simulation-driven
+- Parameterised system configurations define candidate designs  
+- High-fidelity simulations compute performance metrics  
+- AI-enhanced optimisation algorithms guide the search process  
 
-Each design candidate may require:
+In this context, HPC enables:
 
-- Ray-tracing simulations
-- Thermal receiver modelling
-- System performance evaluation
+- Parallel evaluation of large numbers of candidate configurations  
+- Reduction of optimisation wall-clock time  
+- Systematic exploration of high-dimensional design spaces  
 
-Evaluating thousands or millions of candidate configurations demands:
-
-- Parallel computation
-- Efficient workload scheduling
-- Optimised data management
-
-HPC enables:
-
-- Massive parallel simulation campaigns
-- Acceleration of optimisation loops
-- Efficient AI model training on large datasets
+This computational scalability is essential for integral optimisation of complex engineered systems.
 
 ---
 
-## Parallelisation Strategies
+## Integration with AI-Based Optimisation
 
-AI-HPC4CST investigates multiple layers of parallelisation:
+HPC supports advanced AI-enhanced optimisation strategies by:
 
-### 1. Simulation-Level Parallelism
-- Distributed ray-tracing
-- Multi-core receiver modelling
-- GPU acceleration where applicable
+- Enabling population-based and stochastic search methods  
+- Allowing concurrent evaluation of candidate solutions  
+- Supporting iterative refinement of optimisation workflows  
 
-### 2. Design-Space Parallelism
-- Concurrent evaluation of candidate designs
-- Batch simulation strategies
-- Adaptive sampling pipelines
-
-### 3. AI Training Acceleration
-- Distributed neural network training
-- GPU-based optimisation
-- Data-parallel learning frameworks
+The integration of AI and HPC forms a unified computational framework in which optimisation algorithms interact efficiently with simulation engines.
 
 ---
 
-## Workflow Orchestration
+## Scalable Workflow Design
 
-A key objective is the development of reproducible and scalable workflows.
+Beyond acceleration, HPC integration focuses on structured and reproducible execution.
 
-This includes:
+The project develops:
 
-- Automated job submission pipelines
-- Containerised execution environments
-- Version-controlled optimisation workflows
-- Structured data storage and retrieval
+- Well-defined optimisation procedures  
+- Automated execution of simulation batches  
+- Consistent data handling strategies  
+- Modular interfaces between optimisation algorithms and simulation tools  
 
-The aim is to move from ad-hoc simulation scripts toward:
-
-> Reproducible, modular, scalable optimisation infrastructures.
+This structured approach ensures robustness and long-term sustainability of the computational framework.
 
 ---
 
-## Hybrid AI–HPC Loop
+## Computational Infrastructure
 
-The integration of AI and HPC follows an iterative pattern:
+The project leverages established high-performance computing resources to ensure:
 
-1. HPC executes large-scale simulations  
-2. Data is collected and structured  
-3. AI models are trained and validated  
-4. Surrogate models guide new design exploration  
-5. HPC validates promising configurations  
+- Efficient execution of large-scale optimisation campaigns  
+- Compatibility with institutional and national HPC infrastructures  
+- Adaptability to evolving computational environments  
 
-This loop is repeated until convergence toward optimal designs.
-
-The synergy between AI and HPC allows:
-
-- Reduced wall-clock time
-- Improved exploration of complex landscapes
-- Higher optimisation fidelity
+Scalability is addressed both in terms of problem dimensionality and computational workload.
 
 ---
 
-## Scalability and Portability
+## Application to Solar Tower Systems
 
-The project aims to ensure that workflows are:
+Solar tower systems provide a representative and demanding application domain in which:
 
-- Portable across HPC infrastructures
-- Compatible with national and European supercomputing systems
-- Modular and extensible
+- Multi-physics simulations are required  
+- Design variables are strongly coupled  
+- Multi-objective trade-offs must be explored  
 
-Where appropriate, cloud-compatible strategies are also considered.
+The HPC-enabled optimisation framework is validated in this context while remaining applicable to broader simulation-driven optimisation problems.
 
 ---
 
@@ -121,13 +86,9 @@ Where appropriate, cloud-compatible strategies are also considered.
 
 The HPC component of AI-HPC4CST aims to deliver:
 
-- Scalable CST optimisation frameworks
-- Integrated AI–HPC pipelines
-- Performance-aware optimisation strategies
-- Reproducible computational research infrastructures
+- Scalable optimisation workflows for simulation-based engineering  
+- Robust integration of AI and high-performance computing  
+- Efficient exploration of high-dimensional design spaces  
+- Reproducible computational infrastructures  
 
----
-
-HPC in AI-HPC4CST is not merely an acceleration tool.
-
-It is a structural component that enables integral, high-dimensional, AI-enhanced optimisation of advanced solar tower systems.
+HPC in AI-HPC4CST is therefore not merely an acceleration mechanism, but a foundational element enabling integral optimisation of complex systems.

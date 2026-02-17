@@ -5,119 +5,87 @@ title: AI Methods
 
 ## Role of Artificial Intelligence in AI-HPC4CST
 
-Artificial Intelligence (AI) is a central enabler of AI-HPC4CST.  
-Its role is not to replace physics-based simulation, but to **augment, accelerate and structure** the optimisation process of solar tower systems.
+Artificial Intelligence (AI) plays a central role in enhancing optimisation strategies within AI-HPC4CST.
 
-The project investigates how machine learning can:
+Its purpose is not to replace physics-based simulations, but to strengthen the capability of optimisation algorithms to navigate high-dimensional, nonlinear, and computationally demanding design spaces.
 
-- Approximate expensive simulations
-- Guide optimisation strategies
-- Reduce computational cost
-- Enable exploration of high-dimensional design spaces
-- Provide insight into system sensitivities
+AI techniques are embedded within simulation-driven workflows to improve exploration efficiency, solution quality, and multi-objective decision-making.
 
 ---
 
-## Surrogate Modelling
+## AI-Enhanced Optimisation Strategies
 
-### Why Surrogates?
+The project investigates advanced AI-driven optimisation approaches suitable for complex engineering systems, including:
 
-High-fidelity CST simulations (optical ray tracing, thermal models, system performance evaluation) are computationally expensive.  
-Exploring large design spaces using brute-force simulation alone is often infeasible.
+- Stochastic optimisation methods  
+- Evolutionary and population-based algorithms  
+- Neuroevolution techniques  
+- Deep learning-assisted optimisation  
+- Bayesian and hierarchical optimisation strategies  
 
-AI-HPC4CST develops **surrogate models** that learn from simulation data and approximate:
+These methods are particularly suited to problems characterised by:
 
-- Optical efficiency maps
-- Receiver performance behaviour
-- System-level performance indicators
-- Multi-parameter design responses
+- Strong coupling between design variables  
+- Nonlinear response surfaces  
+- Multiple competing objectives  
+- Expensive simulation-based evaluations  
 
----
-
-### Surrogate Model Types
-
-The project explores and evaluates different model families, including:
-
-- Neural networks
-- Gaussian processes
-- Physics-informed neural networks
-- Ensemble learning methods
-
-Key criteria include:
-
-- Accuracy
-- Generalisation capability
-- Robustness
-- Interpretability
-- Computational efficiency
+AI enhances the ability to explore such environments beyond the limitations of conventional deterministic optimisation techniques.
 
 ---
 
-## Physics-Informed Learning
+## Simulation-in-the-Loop Optimisation
 
-A critical aspect of the project is ensuring that AI models:
+AI-HPC4CST adopts a simulation-in-the-loop paradigm:
 
-- Respect physical constraints
-- Remain consistent with conservation laws
-- Avoid non-physical extrapolations
+1. A parameterised configuration defines a candidate system design  
+2. High-fidelity simulations compute performance metrics  
+3. AI-enhanced optimisation algorithms guide the search process  
+4. HPC resources enable scalable evaluation of candidate solutions  
 
-This includes:
-
-- Hybrid simulation–learning loops
-- Constraint-aware training
-- Embedding domain knowledge into model architectures
-- Structured feature engineering based on CST physics
-
-The objective is to move beyond purely data-driven approaches toward **physics-consistent AI frameworks**.
+The optimisation engine operates under a black-box abstraction, interacting with simulations through performance metrics without requiring internal model reformulation.
 
 ---
 
-## Uncertainty Quantification
+## Balancing Exploration and Computational Cost
 
-For engineering decision-making, predictive accuracy alone is insufficient.
+A central research question is how to balance:
 
-AI-HPC4CST incorporates:
+- Time spent generating and evolving candidate designs  
+- Time spent evaluating those designs through simulation  
 
-- Uncertainty estimation in surrogate predictions
-- Sensitivity analysis
-- Confidence-aware optimisation strategies
+AI techniques are investigated as mechanisms to:
 
-Understanding uncertainty enables:
+- Prioritise promising regions of the design space  
+- Adaptively guide search strategies  
+- Improve convergence behaviour in multi-objective contexts  
 
-- Risk-informed design decisions
-- Adaptive sampling strategies
-- Reliable optimisation under incomplete information
-
----
-
-## AI in the Optimisation Loop
-
-Surrogate models are embedded into multi-objective optimisation workflows:
-
-1. Generate simulation data
-2. Train AI surrogate models
-3. Use surrogates to explore design space efficiently
-4. Validate promising solutions with high-fidelity simulations
-5. Iteratively refine models and solutions
-
-This hybrid strategy aims to balance:
-
-- Accuracy
-- Computational cost
-- Exploration efficiency
+This balance is essential in computationally intensive environments such as solar tower system optimisation.
 
 ---
 
-## Expected Advances
+## Multi-Objective and High-Dimensional Optimisation
 
-The AI research component aims to deliver:
+Solar tower systems involve multiple competing objectives and tightly coupled physical processes.
 
-- Robust CST-specific surrogate modelling strategies
-- Hybrid AI–simulation optimisation frameworks
-- Scalable workflows for high-dimensional energy system design
-- Reproducible AI pipelines integrated with HPC environments
+AI-enhanced optimisation supports:
+
+- Simultaneous optimisation of multiple performance criteria  
+- Navigation of complex trade-off surfaces  
+- Avoidance of premature convergence to local optima  
+- Efficient exploration of large parameter spaces  
+
+These capabilities are critical for integral optimisation of CST systems.
 
 ---
 
-AI in AI-HPC4CST is not an isolated component.  
-It is tightly integrated with simulation, optimisation, and HPC acceleration to enable transformative advances in solar tower system design.
+## Expected Advances in AI Methods
+
+The AI component of AI-HPC4CST aims to deliver:
+
+- Advanced optimisation methodologies tailored to simulation-driven engineering problems  
+- AI-enhanced strategies for multi-objective system design  
+- Scalable optimisation approaches compatible with HPC environments  
+- Reproducible computational workflows integrating AI and physics-based simulation  
+
+AI within AI-HPC4CST is therefore not an isolated predictive tool, but a core element of an integrated optimisation framework designed for complex energy systems.

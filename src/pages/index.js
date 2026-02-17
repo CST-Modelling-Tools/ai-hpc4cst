@@ -232,14 +232,15 @@ export default function Home() {
 
             <h1 className={styles.heroTitle}>
               <Translate id="home.heroTitle">
-                Transforming solar tower system design with AI and high-performance computing
+                Advanced Metaheuristic Optimisation for High-Dimensional Solar Tower and Other Energy Systems
               </Translate>
             </h1>
 
             <p className={styles.heroSubtitle}>
               <Translate id="home.heroSubtitle">
-                AI-HPC4CST advances integral, multi-objective optimization of solar tower systems by combining
-                artificial intelligence with high-performance computing.
+                AI-HPC4CST develops advanced metaheuristic optimisation algorithms and scalable HPC workflows to 
+                enable the fast exploration and optimisation of high-dimensional engineering systems. Solar tower 
+                technology provides a high-impact demonstrator of this simulation-driven black-box framework.
               </Translate>
             </p>
 
@@ -256,9 +257,9 @@ export default function Home() {
             </nav>
 
             <div className={styles.statsRow} aria-label="Project pillars">
-              <Stat value="AI" label="Surrogates & optimization" />
-              <Stat value="HPC" label="Acceleration & scalability" />
-              <Stat value="CST" label="Solar tower systems" />
+              <Stat value="AI" label="Advanced metaheuristic optimisation" />
+              <Stat value="HPC" label="Scalable high-performance simulation" />
+              <Stat value="CST" label="Solar tower demonstrator" />
             </div>
           </div>
 
@@ -275,8 +276,9 @@ export default function Home() {
               Why it matters
             </h2>
             <p className={styles.sectionSubtitle}>
-              CST optimization is high-dimensional and multi-objective, with expensive coupled simulations.
-              AI-HPC4CST targets faster iteration, better designs, and transparent reproducibility.
+              Solar tower optimisation involves high-dimensional, strongly coupled design spaces evaluated through
+              computationally expensive simulations. AI-HPC4CST advances scalable metaheuristic strategies to enable
+              systematic exploration, faster design cycles, and reproducible optimisation workflows.
             </p>
           </div>
 
@@ -289,13 +291,13 @@ export default function Home() {
             />
             <Card
               title="Research"
-              description="Multi-objective optimization, AI surrogates, and HPC workflows."
+              description="Advanced metaheuristic optimisation, high-dimensional design spaces, and scalable HPC workflows."
               href="/docs/research/overview"
               tag="Methods"
             />
             <Card
               title="Open tools"
-              description="Tool ecosystem with dedicated blogs and repositories (Tonatiuh++ and more)."
+              description="Open-source simulation and optimisation tools, repositories, and technical resources."
               href="/docs/tools/overview"
               tag="Ecosystem"
             />

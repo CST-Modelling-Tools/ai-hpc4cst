@@ -7,72 +7,65 @@ title: Publications
 
 This page collects scientific publications produced within the AI-HPC4CST project.
 
-The project promotes:
+The project promotes open dissemination of results, transparent methodology, and reproducible computational research in the fields of optimisation, artificial intelligence, high-performance computing, and advanced solar energy systems.
 
-- Open dissemination  
-- Transparent methodology  
-- Reproducible computational research  
-- Long-term accessibility of results  
-
-As results are published, this page will be updated with stable references and links.
+As results become available, this page will be updated with complete and stable references.
 
 ---
 
 ## Journal Articles
 
-_Publications will be listed here once available._
+Peer-reviewed journal articles arising from the project will be listed here.
 
 Each entry will include:
 
-- Full citation  
+- Full bibliographic citation  
 - DOI  
-- Link to publisher version  
-- Link to open-access version (when available)  
-- Associated software or data repository  
+- Link to the publisher version  
+- Link to an open-access version (when available)  
+- Reference to associated software or data repositories  
 
 ---
 
 ## Conference Contributions
 
-_Presentations and proceedings contributions will appear here._
+AI-HPC4CST actively disseminates results in:
 
-The project aims to actively disseminate results in:
+- Solar energy and concentrating solar thermal conferences  
+- Optimisation and computational intelligence venues  
+- High-performance computing forums  
+- Interdisciplinary energy systems events  
 
-- Solar energy conferences  
-- Renewable energy systems forums  
-- AI and optimisation venues  
-- High-performance computing events  
+Conference papers, proceedings, and invited presentations will be listed in this section.
 
 ---
 
-## Preprints & Technical Reports
+## Preprints and Technical Reports
 
-Where appropriate, preprints may be shared prior to journal publication.
+Where appropriate, preprints or technical reports may be shared prior to formal journal publication.
 
-These will include:
+Entries will include:
 
-- arXiv links (if applicable)  
-- Institutional repository links  
+- Repository links (e.g., institutional repositories or preprint servers)  
 - Version information  
+- Persistent identifiers when available  
 
 ---
 
-## Software-Linked Publications
+## Reproducibility and Open Science
 
-A key objective of AI-HPC4CST is to tightly couple publications with:
+Publications derived from AI-HPC4CST aim to be tightly coupled with:
 
-- Public repositories  
-- Reproducible workflows  
 - Versioned software releases  
-
-Each publication will indicate:
-
-- The software version used  
-- Computational environment details  
+- Documented computational workflows  
 - Data availability statements  
 
+Whenever possible, sufficient information will be provided to enable independent verification and reuse of results.
+
 ---
 
-## Citation & Acknowledgement
+## Citation and Acknowledgement
 
-All publications derived from AI-HPC4CST research include the official acknowledgement
+All publications arising from AI-HPC4CST include the official funding acknowledgement in accordance with project requirements:
+
+**Grant ATR2024-155003 funded by MICIU/AEI/10.13039/501100011033.**

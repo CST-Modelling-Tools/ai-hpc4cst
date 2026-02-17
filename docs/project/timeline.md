@@ -5,83 +5,90 @@ title: Timeline
 
 ## Project Duration
 
-AI-HPC4CST is developed over a multi-year period structured around progressive methodological, computational, and validation milestones.
+AI-HPC4CST is developed over a 48-month period, structured around coordinated and partially overlapping work packages.
 
-The timeline reflects the staged integration of system modelling, artificial intelligence, high-performance computing, and large-scale optimisation.
-
----
-
-## Phase 1 – Foundations and Infrastructure
-
-**Focus:** System definition and computational setup
-
-- Definition of representative solar tower configurations  
-- Identification of optimisation variables and constraints  
-- Development of baseline simulation workflows  
-- Initial HPC integration and benchmarking  
-
-This phase establishes the technical and modelling foundations required for advanced AI integration.
+The timeline reflects progressive integration of Artificial Intelligence (AI), High-Performance Computing (HPC), and solar tower optimisation activities, with continuous dissemination and strategic consolidation.
 
 ---
 
-## Phase 2 – AI Surrogate Development
+## Months 1–12: Framework Definition and Initial Integration
 
-**Focus:** Acceleration through machine learning
+During the first year, the project establishes its organisational and technical foundations.
 
-- Large-scale dataset generation  
-- Design and training of surrogate models  
-- Validation against high-fidelity simulations  
-- Uncertainty and robustness analysis  
+Main activities include:
 
-The objective is to reduce simulation cost while maintaining predictive reliability.
+- Project coordination and establishment of governance mechanisms  
+- Definition of computational procedures and optimisation workflows  
+- Initial exploration of suitable AI and HPC technologies  
+- Development of dissemination and open science strategies  
 
----
-
-## Phase 3 – Integrated Multi-Objective Optimisation
-
-**Focus:** Unified AI–HPC optimisation framework
-
-- Integration of surrogate models into optimisation loops  
-- Implementation of multi-objective optimisation algorithms  
-- High-dimensional design space exploration  
-- Scalability analysis on HPC systems  
-
-This phase delivers the core optimisation framework of the project.
+By the end of this phase, core procedures and workflows are in place to support large-scale optimisation.
 
 ---
 
-## Phase 4 – Demonstration and Validation
+## Months 12–24: Technology Exploration and Early Implementation
 
-**Focus:** Application to realistic case studies
+The second phase focuses on consolidating the technological backbone of the project.
 
-- End-to-end optimisation of representative solar tower systems  
-- Comparative evaluation against conventional design approaches  
-- Sensitivity and trade-off analyses  
-- Documentation of reproducible workflows  
+Key developments include:
 
-This phase demonstrates the practical viability of the developed framework.
+- Systematic evaluation of AI and HPC approaches  
+- Progressive implementation of selected technologies  
+- Consolidation of scalable computational workflows  
+- Ongoing dissemination activities and stakeholder engagement  
 
----
-
-## Phase 5 – Dissemination and Impact
-
-**Focus:** Scientific output and knowledge transfer
-
-- Publication of peer-reviewed articles  
-- Release of software tools and documentation  
-- Conference participation and outreach  
-- Engagement with industrial and policy stakeholders  
-
-Dissemination activities are continuous throughout the project and intensify during the final stages.
+By mid-project, the optimisation framework is partially implemented and ready for structured validation.
 
 ---
 
-## Continuous Activities
+## Months 18–42: Pilot Problem Solution and Validation
 
-Across all phases, the project maintains:
+From the second year onward, the developed framework is applied to defined pilot optimisation problems in solar tower systems.
 
-- Open science and reproducibility practices  
-- Software sustainability and documentation  
-- Interdisciplinary integration between AI, HPC, and solar thermal engineering  
+Activities include:
 
-The structured progression of these phases ensures coherent development from foundational modelling to validated optimisation frameworks with real-world relevance.
+- Standardisation and streamlining of workflows  
+- Systematic search for optimisation solutions  
+- Validation under realistic engineering conditions  
+- Continuous refinement of computational tools  
+
+This period represents the core scientific execution phase, where AI and HPC technologies are fully integrated into the optimisation process.
+
+---
+
+## Months 42–48: Consolidation and Research Roadmap
+
+The final phase consolidates results and defines future directions.
+
+Main activities include:
+
+- Documentation of lessons learned  
+- Preparation of a strategic research roadmap  
+- Final dissemination and knowledge transfer actions  
+- Consolidation of long-term collaborations  
+
+This phase ensures continuity beyond the project duration.
+
+---
+
+## Continuous Activities (Months 1–48)
+
+Throughout the entire project duration:
+
+- Project management and coordination remain active  
+- Dissemination and communication activities are ongoing  
+- Open science principles are implemented  
+- Networking with scientific and industrial stakeholders continues  
+
+---
+
+## Structured Progression
+
+The timeline is designed to:
+
+- Ensure early establishment of computational procedures  
+- Allow sufficient maturation of AI and HPC technologies  
+- Provide an extended validation period for pilot optimisation problems  
+- Conclude with strategic consolidation and forward-looking planning  
+
+This structured progression enables coherent development from technological exploration to validated optimisation outcomes in solar tower systems.

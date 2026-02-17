@@ -5,136 +5,81 @@ title: Pilot Problems
 
 ## Pilot Problems in AI-HPC4CST
 
-To demonstrate and validate the proposed methodologies, AI-HPC4CST is structured around a set of representative pilot problems in solar tower system design.
+AI-HPC4CST validates its AI–HPC optimisation framework through a set of defined pilot problems within solar tower systems.
 
-These pilot problems serve to:
+These pilot problems serve as realistic, simulation-driven test cases in which the developed optimisation methodologies are applied, evaluated, and refined.
 
-- Test AI–HPC integration strategies  
-- Benchmark optimisation performance  
-- Validate surrogate modelling approaches  
-- Demonstrate reproducibility and scalability  
+Their purpose is to:
 
-They are designed to progressively increase in complexity.
-
----
-
-## 1. Heliostat Field Layout Optimisation
-
-### Objective
-Optimise heliostat positioning and aiming strategies to maximise annual optical efficiency under realistic constraints.
-
-### Key Challenges
-
-- High-dimensional design variables (positions, aiming points, grouping strategies)
-- Nonlinear shading and blocking interactions
-- Large-scale ray-tracing requirements
-
-### Research Questions
-
-- Can AI surrogate models reduce the number of required ray-tracing evaluations?
-- How does multi-objective optimisation improve trade-offs between efficiency and cost?
-- What is the scalability of layout optimisation under HPC execution?
+- Demonstrate the integration of AI-enhanced optimisation and HPC workflows  
+- Validate optimisation strategies under realistic engineering constraints  
+- Assess scalability and robustness of the computational framework  
+- Identify practical limitations and improvement opportunities  
 
 ---
 
-## 2. Receiver Design Optimisation
+## Application Domain
 
-### Objective
-Optimise receiver geometry and operating conditions to improve thermal performance and durability.
+Solar tower systems provide a computationally demanding environment characterised by:
 
-### Key Challenges
+- Strong coupling between optical and thermal processes  
+- High-dimensional design variables  
+- Nonlinear system behaviour  
+- Multi-objective performance criteria  
 
-- Coupled optical and thermal behaviour
-- Flux non-uniformity constraints
-- Material and operational limits
+Within this context, pilot problems focus on optimisation challenges involving system configurations, geometric parameters, and operational conditions.
 
-### Research Questions
-
-- Can AI models predict flux distribution and thermal stress efficiently?
-- How can HPC accelerate coupled optical–thermal simulations?
-- What optimisation strategies best manage competing objectives (efficiency, reliability, cost)?
+The emphasis is not on isolated component tuning, but on integral optimisation under realistic simulation-based evaluation.
 
 ---
 
-## 3. Integrated System Optimisation
+## From Framework Development to Applied Optimisation
 
-### Objective
-Move from component-level optimisation toward integrated system-level optimisation.
+The pilot phase follows the technological maturation of the AI and HPC components.
 
-### Key Challenges
+It includes:
 
-- Interaction between heliostat field and receiver
-- System-level efficiency metrics
-- Multi-scale modelling complexity
+- Standardisation and streamlining of optimisation workflows  
+- Systematic search for improved design solutions  
+- Iterative refinement of optimisation strategies  
+- Validation of results through high-fidelity simulations  
 
-### Research Questions
-
-- How can surrogate models coordinate optimisation across subsystems?
-- What is the computational impact of full-system optimisation?
-- How does integrated optimisation compare to sequential design approaches?
+This stage transforms methodological development into applied optimisation practice.
 
 ---
 
-## 4. Multi-Objective Trade-Off Studies
+## Multi-Objective Optimisation Context
 
-Across all pilot problems, multi-objective optimisation plays a central role.
+The pilot problems involve multiple competing objectives, such as:
 
-Typical competing objectives include:
-
-- Optical efficiency  
-- Thermal efficiency  
-- Capital cost proxies  
+- Optical and thermal performance  
+- System efficiency indicators  
 - Operational constraints  
 - Robustness under varying conditions  
 
-AI-HPC4CST investigates:
-
-- Pareto front construction at scale  
-- Decision-support tools for stakeholders  
-- Visualisation of high-dimensional trade-offs  
+AI-enhanced optimisation strategies are used to explore trade-offs and identify high-quality solutions within this multi-objective landscape.
 
 ---
 
-## Progressive Complexity Strategy
+## Role of HPC in Pilot Validation
 
-The pilot problems are structured progressively:
+The application of optimisation strategies to pilot problems requires:
 
-1. Component-level optimisation  
-2. Coupled subsystem optimisation  
-3. Full integrated system optimisation  
+- Parallel evaluation of candidate configurations  
+- Iterative execution of stochastic search processes  
+- Efficient management of computational resources  
 
-This staged approach allows:
-
-- Method validation at smaller scales  
-- Incremental HPC scaling  
-- Controlled benchmarking of AI performance  
-
----
-
-## Benchmarking and Reproducibility
-
-Each pilot problem will include:
-
-- Defined input datasets  
-- Clearly specified objectives and constraints  
-- Documented computational workflows  
-- Reproducible optimisation pipelines  
-
-The aim is to create reference optimisation cases that can:
-
-- Be reused by the CST community  
-- Serve as methodological benchmarks  
-- Support transparent comparison of optimisation strategies  
+HPC enables scalable validation and ensures that optimisation results are obtained within feasible timeframes.
 
 ---
 
 ## Expected Outcomes
 
-Through these pilot problems, AI-HPC4CST aims to demonstrate:
+Through the pilot problems, AI-HPC4CST aims to demonstrate:
 
-- Significant reduction in optimisation time  
-- Improved design quality  
-- Scalable AI–HPC workflows  
-- Open, reproducible optimisation frameworks  
+- Effective integration of AI and HPC in simulation-driven optimisation  
+- Improved optimisation capability for complex solar tower configurations  
+- Robust and scalable computational workflows  
+- Practical insights to inform future research directions  
 
-The pilot problems transform theoretical methodology into validated, practical optimisation advances for advanced solar tower systems.
+The pilot problems represent the bridge between methodological innovation and validated optimisation outcomes in advanced solar energy systems.

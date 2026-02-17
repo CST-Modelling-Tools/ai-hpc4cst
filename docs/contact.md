@@ -11,12 +11,10 @@ AI-HPC4CST welcomes scientific collaboration, technical exchange, and policy dia
 
 ## Principal Investigator
 
-**[Full Name]**  
-ATRAE Researcher  
-[Department / Research Unit]  
-[Institution Name]
-
-Email: [your.email@institution.es]  
+**Manuel Jesús Blanco Muriel, PhD., Dr.Ing.**  
+ATRAE Distinguished Researcher  
+CIEMAT - Plataforma Solar de Almería  
+Email: manuel.blanco@psa.es  
 
 ---
 
@@ -24,9 +22,10 @@ Email: [your.email@institution.es]
 
 AI-HPC4CST is hosted at:
 
-[Institution Name]  
-[Department / Research Unit]  
-[City, Country]
+**CIEMAT**  
+Plataforma Solar de Almería  
+Tabernas, Almería    
+Spain
 
 ---
 
