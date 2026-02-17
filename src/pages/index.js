@@ -113,7 +113,7 @@ export default function Home() {
 
   const layoutDescription = translate({
     id: 'home.meta.description',
-    message: 'AI and HPC to enable integral, multi-objective optimisation of solar tower systems',
+    message: 'The official AI-HPC4CST ATRAE project website: objectives, research, timeline, results, and tools.',
   });
 
   const heroAria = translate({
