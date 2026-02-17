@@ -74,30 +74,6 @@ function FundingStrip() {
   );
 }
 
-function usePrefersReducedMotion() {
-  const [reduced, setReduced] = React.useState(false);
-
-  React.useEffect(() => {
-    if (typeof window === 'undefined' || !window.matchMedia) return;
-
-    const media = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const onChange = () => setReduced(Boolean(media.matches));
-
-    onChange();
-
-    if (media.addEventListener) {
-      media.addEventListener('change', onChange);
-      return () => media.removeEventListener('change', onChange);
-    }
-
-    // Safari fallback
-    media.addListener(onChange);
-    return () => media.removeListener(onChange);
-  }, []);
-
-  return reduced;
-}
-
 /**
  * Cross-fade carousel:
  * - Two layers (base + incoming) with opacity transition.
@@ -105,127 +81,26 @@ function usePrefersReducedMotion() {
  * - Respects prefers-reduced-motion (no rotation, no transitions).
  */
 function HeroPhotoCard() {
-  const img1 = useBaseUrl('/img/psa/psa-01.webp');
-  const img2 = useBaseUrl('/img/psa/psa-02.webp');
-  const img3 = useBaseUrl('/img/psa/psa-03.webp');
-  const img4 = useBaseUrl('/img/psa/psa-04.webp');
-  const img5 = useBaseUrl('/img/psa/psa-05.webp');
-
-  const images = React.useMemo(() => [img1, img2, img3, img4, img5], [img1, img2, img3, img4, img5]);
-
-  const prefersReducedMotion = usePrefersReducedMotion();
-
-  const FADE_MS = 650;
-  const ROTATE_MS = 5000;
-
-  const [baseIndex, setBaseIndex] = React.useState(0);
-  const [incomingIndex, setIncomingIndex] = React.useState(0);
-  const [showIncoming, setShowIncoming] = React.useState(false);
-
-  const intervalRef = React.useRef(null);
-  const fadeTimeoutRef = React.useRef(null);
-
-  React.useEffect(() => {
-    if (typeof window === 'undefined') return;
-
-    // Safety cleanup
-    const clearTimers = () => {
-      if (intervalRef.current) {
-        window.clearInterval(intervalRef.current);
-        intervalRef.current = null;
-      }
-      if (fadeTimeoutRef.current) {
-        window.clearTimeout(fadeTimeoutRef.current);
-        fadeTimeoutRef.current = null;
-      }
-    };
-
-    clearTimers();
-
-    // No animation/rotation if reduced motion or insufficient images
-    if (prefersReducedMotion || images.length < 2) {
-      setBaseIndex(0);
-      setIncomingIndex(0);
-      setShowIncoming(false);
-      return clearTimers;
-    }
-
-    intervalRef.current = window.setInterval(() => {
-      const next = (baseIndex + 1) % images.length;
-
-      // Preload next image before fading
-      const preloader = new window.Image();
-      preloader.src = images[next];
-
-      preloader.onload = () => {
-        setIncomingIndex(next);
-        setShowIncoming(true);
-
-        // After fade completes, promote incoming to base
-        fadeTimeoutRef.current = window.setTimeout(() => {
-          setBaseIndex(next);
-          setShowIncoming(false);
-        }, FADE_MS);
-      };
-
-      // If preload errors, just hard-swap safely (still no crash)
-      preloader.onerror = () => {
-        setBaseIndex(next);
-        setIncomingIndex(next);
-        setShowIncoming(false);
-      };
-    }, ROTATE_MS);
-
-    return clearTimers;
-    // We intentionally depend on baseIndex so the “next” calculation stays correct.
-  }, [baseIndex, images, prefersReducedMotion]);
-
-  const baseSrc = images[baseIndex] || images[0];
-  const incomingSrc = images[incomingIndex] || images[0];
-
-  const heroAlt = translate({
-    id: 'home.heroPhoto.alt',
-    message: 'CIEMAT-PSA solar tower systems',
-  });
+  const img = useBaseUrl('/img/psa/psa-ai-01.webp'); // <-- your AI-enhanced image
 
   return (
     <div className={styles.heroPhotoCard}>
-      {/* Base image */}
       <img
-        src={baseSrc}
-        alt={heroAlt}
+        src={img}
+        alt="CIEMAT-PSA solar tower systems with AI-enhanced optimisation visualisation"
         className={clsx(styles.heroPhoto, styles.heroPhotoBase)}
         draggable="false"
         loading="eager"
       />
 
-      {/* Incoming image (cross-fade layer) */}
-      {!prefersReducedMotion ? (
-        <img
-          src={incomingSrc}
-          alt=""
-          aria-hidden="true"
-          className={clsx(
-            styles.heroPhoto,
-            styles.heroPhotoIncoming,
-            showIncoming && styles.heroPhotoIncomingVisible
-          )}
-          draggable="false"
-        />
-      ) : null}
-
       <div className={styles.heroPhotoOverlay} />
 
       <div className={styles.heroPhotoCaption}>
-        <div className={styles.heroPhotoTitle}>
-          <Translate id="home.heroPhoto.title">CIEMAT – PSA</Translate>
-        </div>
-        <div className={styles.heroPhotoSubtitle}>
-          <Translate id="home.heroPhoto.subtitle">Solar tower systems</Translate>
-        </div>
+        <div className={styles.heroPhotoTitle}>CIEMAT – PSA</div>
+        <div className={styles.heroPhotoSubtitle}>Solar tower systems</div>
         <div className={styles.heroPhotoLinkRow}>
           <Link to="/docs/project/objectives" className={styles.heroPhotoLink}>
-            <Translate id="home.heroPhoto.link">View project overview →</Translate>
+            View project overview →
           </Link>
         </div>
       </div>

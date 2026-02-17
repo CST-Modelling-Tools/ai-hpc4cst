@@ -79,10 +79,6 @@ const config = {
 
       navbar: {
         title: 'AI-HPC4CST',
-        logo: {
-          alt: 'AI-HPC4CST',
-          src: 'img/logo.svg', // Replace later with official project logo
-        },
         items: [
           {to: '/', label: 'Home', position: 'left'},
 
