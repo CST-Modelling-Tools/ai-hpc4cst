@@ -346,14 +346,16 @@
   "home.officialTitle": {
     "message": "Hacia la innovación disruptiva en sistemas avanzados de energía solar mediante inteligencia artificial y computación de altas prestaciones."
   },
+
   "home.heroTitle": {
-    "message": "Transformando el diseño de sistemas de torre solar mediante IA y computación de altas prestaciones"
+    "message": "Optimización metaheurística avanzada de alta dimensionalidad para sistemas termosolares de torre y otros sistemas energéticos"
   },
   "home.heroSubtitle": {
-    "message": "El proyecto AI-HPC4CST desarrolla métodos de optimización integral y multiobjetivo para sistemas de torre solar mediante la integración de inteligencia artificial y computación de altas prestaciones."
+    "message": "AI-HPC4CST desarrolla algoritmos avanzados de optimización metaheurística y flujos de trabajo HPC escalables para permitir la rápida exploración y optimización de alta dimensionalidad de sistemas de ingeniería. La tecnología de sistemas termosolares de torre constituye un demostrador de alto impacto de este entorno de optimizadión de caja negra basado en la simulación física de los sistemas a optimziar."
   },
+
   "home.cta.project": {
-    "message": "Resumen del proyecto"
+    "message": "Descripción del proyecto"
   },
   "home.cta.research": {
     "message": "Investigación"
@@ -361,6 +363,7 @@
   "home.cta.publications": {
     "message": "Publicaciones"
   },
+
   "home.panel.title": {
     "message": "Para la comunidad termosolar y responsables de la toma de decisiones"
   },
@@ -375,5 +378,151 @@
   },
   "home.panel.link": {
     "message": "Empezar aquí →"
+  },
+
+  "home.card.cta": {
+    "message": "Saber más →"
+  },
+  "home.meta.description": {
+    "message": "IA y HPC para posibilitar la optimización integral y multiobjetivo de sistemas termosolares de torre"
+  },
+  "home.hero.aria": {
+    "message": "Hero de presentación del proyecto"
+  },
+  "home.hero.actions.aria": {
+    "message": "Acciones principales"
+  },
+  "home.hero.image.aria": {
+    "message": "Imagen principal"
+  },
+
+  "home.funding.aria": {
+    "message": "Reconocimiento de financiación"
+  },
+  "home.funding.logoAria": {
+    "message": "MICIU y AEI (se abre en una pestaña nueva)"
+  },
+  "home.funding.logoAlt": {
+    "message": "MICIU y AEI"
+  },
+
+  "home.heroPhoto.alt": {
+    "message": "Sistemas termosolares de torre en CIEMAT-PSA"
+  },
+  "home.heroPhoto.title": {
+    "message": "CIEMAT – PSA"
+  },
+  "home.heroPhoto.subtitle": {
+    "message": "Sistemas termosolares de torre"
+  },
+  "home.heroPhoto.link": {
+    "message": "Ver descripción del proyecto →"
+  },
+
+  "home.stats.aria": {
+    "message": "Pilares del proyecto"
+  },
+  "home.stats.ai": {
+    "message": "Optimización metaheurística avanzada"
+  },
+  "home.stats.hpc": {
+    "message": "Simulación de alto rendimiento escalable"
+  },
+  "home.stats.cst": {
+    "message": "Demostrador termosolar de torre"
+  },
+
+  "home.why.title": {
+    "message": "Por qué es importante"
+  },
+  "home.why.subtitle": {
+    "message": "La optimización de sistemas termosolares de torre implica espacios de diseño de alta dimensionalidad y fuertemente acoplados, evaluados mediante simulaciones computacionalmente costosas. AI-HPC4CST avanza estrategias metaheurísticas escalables para permitir la exploración sistemática, ciclos de diseño más rápidos y flujos de optimización reproducibles."
+  },
+
+  "home.cards.project.title": {
+    "message": "Proyecto"
+  },
+  "home.cards.project.desc": {
+    "message": "Objetivos, paquetes de trabajo, cronograma y financiación."
+  },
+  "home.cards.project.tag": {
+    "message": "Visión general"
+  },
+
+  "home.cards.research.title": {
+    "message": "Investigación"
+  },
+  "home.cards.research.desc": {
+    "message": "Optimización metaheurística avanzada, espacios de diseño de alta dimensionalidad y flujos de trabajo HPC escalables."
+  },
+  "home.cards.research.tag": {
+    "message": "Métodos"
+  },
+
+  "home.cards.tools.title": {
+    "message": "Herramientas abiertas"
+  },
+  "home.cards.tools.desc": {
+    "message": "Herramientas open-source de simulación y optimización, repositorios y recursos técnicos."
+  },
+  "home.cards.tools.tag": {
+    "message": "Ecosistema"
+  },
+
+  "home.tools.title": {
+    "message": "Ecosistema de herramientas"
+  },
+  "home.tools.subtitle": {
+    "message": "El sitio principal aporta el contexto del proyecto. Cada herramienta tiene su propio blog y centro de documentación."
+  },
+  "home.tools.tonatiuh.aria": {
+    "message": "Blog de desarrollo de Tonatiuh++ (se abre en una pestaña nueva)"
+  },
+  "home.tools.tonatiuh.desc": {
+    "message": "Blog de la herramienta CST de trazado de rayos y modelado"
+  },
+  "home.tools.tonatiuh.cta": {
+    "message": "Abrir blog →"
+  },
+
+  "home.tools.upcoming.aria": {
+    "message": "Herramientas futuras (próximamente)"
+  },
+  "home.tools.upcoming.title": {
+    "message": "Herramientas futuras"
+  },
+  "home.tools.upcoming.desc": {
+    "message": "Las nuevas herramientas del proyecto se publicarán aquí como blogs independientes."
+  },
+  "home.tools.upcoming.cta": {
+    "message": "Próximamente"
+  },
+
+  "home.results.title": {
+    "message": "Resultados y difusión"
+  },
+  "home.results.subtitle": {
+    "message": "Publicaciones, versiones de software y eventos se recopilarán y actualizarán durante el proyecto."
+  },
+
+  "home.results.cards.pubs.title": {
+    "message": "Publicaciones"
+  },
+  "home.results.cards.pubs.desc": {
+    "message": "Artículos y preprints con referencias estables."
+  },
+
+  "home.results.cards.software.title": {
+    "message": "Software"
+  },
+  "home.results.cards.software.desc": {
+    "message": "Versiones, repositorios y notas de reproducibilidad."
+  },
+
+  "home.results.cards.contact.title": {
+    "message": "Contacto"
+  },
+  "home.results.cards.contact.desc": {
+    "message": "Contacta para colaboración, difusión o presentaciones institucionales."
   }
 }

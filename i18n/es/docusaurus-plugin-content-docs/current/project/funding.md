@@ -11,25 +11,21 @@ AI-HPC4CST está financiado en el marco del **Programa ATRAE** del Ministerio de
 
 El proyecto cuenta con el apoyo de:
 
-- **Ministerio de Ciencia, Innovación y Universidades (MICIU)**
-- **Agencia Estatal de Investigación (AEI)**
+- Ministerio de Ciencia, Innovación y Universidades (MICIU)  
+- Agencia Estatal de Investigación (AEI)  
 
 ---
 
-## Reconocimiento Oficial
+## Marco del Programa
 
-De conformidad con las obligaciones de comunicación y publicidad establecidas por la Agencia Estatal de Investigación, todos los materiales de difusión asociados al proyecto incluyen la mención correspondiente a la ayuda concedida y los logotipos institucionales oficiales.
+El programa ATRAE promueve la atracción de talento investigador y el desarrollo de iniciativas científicas de alto impacto en España.
 
-La referencia de financiación y los logotipos institucionales aparecen:
-
-- En el pie de página del sitio web (visible en todas las páginas)
-- En la página de inicio (visible sin necesidad de desplazamiento)
-- En publicaciones científicas y materiales de difusión derivados del proyecto
+En este contexto, AI-HPC4CST contribuye al fortalecimiento del liderazgo de España en investigación avanzada en energía solar mediante la integración de la Inteligencia Artificial (IA) y la Computación de Alto Rendimiento (HPC) para la optimización a gran escala de sistemas termosolares de torre.
 
 ---
 
-## Contexto del Programa
+## Compromiso Institucional
 
-El programa ATRAE tiene como objetivo la atracción de talento investigador y el desarrollo de proyectos científicos de alto impacto en España. En este marco, AI-HPC4CST contribuye al avance en innovación de sistemas solares avanzados mediante la integración de inteligencia artificial y computación de alto rendimiento.
+El proyecto se desarrolla en el Departamento de Energía de CIEMAT y en la Plataforma Solar de Almería (PSA), aprovechando la experiencia consolidada en tecnologías de sistemas termosolares de concentración (CST) y en investigación computacional avanzada.
 
-El proyecto se desarrolla bajo la normativa científica y administrativa establecida por la Agencia Estatal de Investigación.
+Todas las publicaciones científicas, materiales de comunicación y actividades de difusión incluyen la correspondiente referencia de financiación y las menciones institucionales requeridas, garantizando la transparencia y la adecuada atribución del apoyo recibido.

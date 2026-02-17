@@ -5,83 +5,90 @@ title: Cronograma
 
 ## Duración del Proyecto
 
-AI-HPC4CST se desarrolla a lo largo de varios años mediante fases progresivas que integran modelado físico, inteligencia artificial, computación de alto rendimiento y optimización avanzada.
+AI-HPC4CST se desarrolla a lo largo de un periodo de 48 meses, estructurado en torno a paquetes de trabajo coordinados y parcialmente solapados.
 
-El cronograma refleja una integración escalonada de modelado del sistema, IA, HPC y optimización a gran escala.
-
----
-
-## Fase 1 – Fundamentos e Infraestructura
-
-**Enfoque:** Definición del sistema y preparación computacional
-
-- Definición de configuraciones representativas de torre solar  
-- Identificación de variables y restricciones de optimización  
-- Desarrollo de flujos de simulación base  
-- Integración inicial en entornos HPC  
-
-Esta fase establece las bases técnicas necesarias para la integración posterior de IA.
+El cronograma refleja la integración progresiva de la Inteligencia Artificial (IA), la Computación de Alto Rendimiento (HPC) y las actividades de optimización en sistemas termosolares de torre, junto con acciones continuas de difusión y consolidación estratégica.
 
 ---
 
-## Fase 2 – Desarrollo de Modelos Sustitutos con IA
+## Meses 1–12: Definición del Marco e Integración Inicial
 
-**Enfoque:** Aceleración mediante aprendizaje automático
+Durante el primer año, el proyecto establece sus fundamentos organizativos y técnicos.
 
-- Generación de grandes conjuntos de datos  
-- Diseño y entrenamiento de modelos sustitutos  
-- Validación frente a simulaciones de alta fidelidad  
-- Análisis de incertidumbre y robustez  
+Las principales actividades incluyen:
 
-El objetivo es reducir el coste computacional manteniendo la fiabilidad predictiva.
+- Coordinación del proyecto y establecimiento de mecanismos de gobernanza  
+- Definición de procedimientos computacionales y flujos de trabajo de optimización  
+- Exploración inicial de tecnologías adecuadas de IA y HPC  
+- Desarrollo de estrategias de difusión y ciencia abierta  
 
----
-
-## Fase 3 – Optimización Multiobjetivo Integrada
-
-**Enfoque:** Marco unificado IA–HPC
-
-- Integración de modelos sustitutos en bucles de optimización  
-- Implementación de algoritmos multiobjetivo  
-- Exploración de espacios de diseño de alta dimensión  
-- Evaluación de escalabilidad en HPC  
-
-Esta fase entrega el núcleo metodológico del proyecto.
+Al final de esta fase, los procedimientos y flujos de trabajo fundamentales estarán establecidos para soportar la optimización a gran escala.
 
 ---
 
-## Fase 4 – Demostración y Validación
+## Meses 12–24: Exploración Tecnológica e Implementación Inicial
 
-**Enfoque:** Aplicación a casos de estudio representativos
+La segunda fase se centra en consolidar la base tecnológica del proyecto.
 
-- Optimización completa de sistemas de torre solar  
-- Comparación con enfoques tradicionales  
-- Análisis de sensibilidad y compromisos  
-- Documentación de flujos reproducibles  
+Entre los desarrollos clave se incluyen:
 
-Se demuestra la viabilidad práctica del marco desarrollado.
+- Evaluación sistemática de enfoques de IA y HPC  
+- Implementación progresiva de las tecnologías seleccionadas  
+- Consolidación de flujos de trabajo computacionales escalables  
+- Actividades continuas de difusión e interacción con agentes relevantes  
 
----
-
-## Fase 5 – Difusión e Impacto
-
-**Enfoque:** Producción científica y transferencia
-
-- Publicación en revistas científicas  
-- Liberación de herramientas y documentación  
-- Participación en congresos  
-- Interacción con industria y responsables de políticas  
-
-Las actividades de difusión se desarrollan de forma continua a lo largo del proyecto.
+A mitad del proyecto, el marco de optimización estará parcialmente implementado y preparado para su validación estructurada.
 
 ---
 
-## Actividades Continuas
+## Meses 18–42: Resolución y Validación de Problemas Piloto
 
-Durante todo el proyecto se priorizan:
+A partir del segundo año, el marco desarrollado se aplica a problemas piloto definidos en sistemas termosolares de torre.
 
-- Ciencia abierta y reproducibilidad  
-- Sostenibilidad del software y documentación  
-- Integración interdisciplinar entre IA, HPC e ingeniería solar térmica  
+Las actividades incluyen:
 
-La progresión estructurada de estas fases garantiza una evolución coherente desde el modelado inicial hasta la validación de marcos de optimización con relevancia práctica.
+- Estandarización y racionalización de los flujos de trabajo  
+- Búsqueda sistemática de soluciones de optimización  
+- Validación bajo condiciones de ingeniería realistas  
+- Refinamiento continuo de las herramientas computacionales  
+
+Este periodo representa la fase central de ejecución científica, en la que las tecnologías de IA y HPC se integran plenamente en el proceso de optimización.
+
+---
+
+## Meses 42–48: Consolidación y Hoja de Ruta de Investigación
+
+La fase final consolida los resultados y define las líneas futuras.
+
+Las actividades principales incluyen:
+
+- Documentación de las lecciones aprendidas  
+- Elaboración de una hoja de ruta estratégica de investigación  
+- Acciones finales de difusión y transferencia de conocimiento  
+- Consolidación de colaboraciones a largo plazo  
+
+Esta fase garantiza la continuidad más allá de la duración formal del proyecto.
+
+---
+
+## Actividades Continuas (Meses 1–48)
+
+A lo largo de toda la duración del proyecto:
+
+- La gestión y coordinación permanecen activas  
+- Las actividades de difusión y comunicación son continuas  
+- Se aplican principios de ciencia abierta  
+- Se mantiene la interacción con la comunidad científica e industrial  
+
+---
+
+## Progresión Estructurada
+
+El cronograma está diseñado para:
+
+- Garantizar el establecimiento temprano de procedimientos computacionales  
+- Permitir la maduración suficiente de las tecnologías de IA y HPC  
+- Proporcionar un periodo amplio de validación mediante problemas piloto  
+- Concluir con una consolidación estratégica y planificación futura  
+
+Esta progresión estructurada permite una evolución coherente desde la exploración tecnológica hasta resultados validados de optimización en sistemas termosolares de torre.

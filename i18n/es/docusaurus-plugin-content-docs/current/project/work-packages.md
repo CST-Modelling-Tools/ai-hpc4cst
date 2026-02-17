@@ -5,94 +5,92 @@ title: Paquetes de Trabajo
 
 ## Estructura de los Paquetes de Trabajo
 
-AI-HPC4CST se organiza en varios paquetes de trabajo (WP) coordinados que abordan el desarrollo metodológico, la implementación computacional, la validación y la difusión.
+AI-HPC4CST se organiza en cinco Paquetes de Trabajo (WPs) coordinados que estructuran el proyecto desde la gobernanza y la difusión hasta el desarrollo tecnológico, la aplicación a problemas piloto y la consolidación estratégica a largo plazo.
 
-Cada paquete contribuye al desarrollo de un marco integral de optimización basado en IA y HPC para sistemas de torre solar.
+En conjunto, estos paquetes de trabajo garantizan una ejecución rigurosa, el desarrollo de metodologías basadas en IA y HPC, la validación mediante desafíos de optimización en sistemas termosolares de torre y la consolidación de futuras líneas de investigación.
 
 ---
 
-## WP1 – Fundamentos y Modelado del Sistema
+## WP1 – Gestión del Proyecto
 
-**Objetivo:** Establecer las bases físicas y computacionales del proyecto.
+El WP1 garantiza la coordinación eficaz y la alineación estratégica de todas las actividades del proyecto a lo largo de sus 48 meses de duración.
+
+Sus actividades incluyen:
+
+- Coordinación del trabajo científico y técnico  
+- Seguimiento del progreso y de los hitos  
+- Interacción con el International Technical Advisory Board (ITAB)  
+- Establecimiento de redes estratégicas con instituciones y agentes relevantes  
+
+Este paquete de trabajo asegura una ejecución coherente y un impulso sostenido del proyecto.
+
+---
+
+## WP2 – Difusión y Comunicación
+
+El WP2 garantiza que los resultados del proyecto se comuniquen eficazmente a la comunidad científica, al sector industrial, a los responsables de políticas públicas y a la sociedad.
+
+Entre sus actividades principales se incluyen:
+
+- Desarrollo de una estrategia de difusión y explotación  
+- Implementación de prácticas de ciencia abierta  
+- Publicaciones científicas, seminarios web y acciones de divulgación  
+- Identificación y protección de resultados potencialmente explotables  
+
+Este paquete de trabajo refuerza la transparencia, la reproducibilidad y el impacto a largo plazo.
+
+---
+
+## WP3 – IA y HPC
+
+El WP3 se centra en la exploración, selección e implementación de tecnologías de Inteligencia Artificial (IA) y Computación de Alto Rendimiento (HPC) dentro del marco del proyecto.
+
+Sus actividades principales incluyen:
+
+- Definición de procedimientos computacionales y flujos de trabajo de optimización  
+- Evaluación de enfoques de IA y HPC adecuados para la optimización a gran escala  
+- Implementación e integración de las tecnologías seleccionadas  
+- Desarrollo de herramientas asociadas en código abierto  
+
+Este paquete de trabajo constituye la columna vertebral tecnológica de AI-HPC4CST.
+
+---
+
+## WP4 – Resolución de Problemas Piloto
+
+El WP4 aplica el marco desarrollado de IA y HPC a problemas piloto definidos en sistemas termosolares de torre.
+
+Sus actividades se centran en:
+
+- Estandarización y racionalización de los flujos de trabajo de optimización  
+- Búsqueda sistemática de soluciones a desafíos de optimización seleccionados  
+- Validación del marco desarrollado bajo condiciones de ingeniería realistas  
+
+Este paquete de trabajo demuestra la efectividad práctica de las metodologías del proyecto.
+
+---
+
+## WP5 – Hoja de Ruta de Investigación
+
+El WP5 consolida el conocimiento generado durante el proyecto y define futuras direcciones de investigación.
 
 Incluye:
 
-- Definición de configuraciones representativas de torre solar  
-- Identificación de indicadores clave de rendimiento (KPIs)  
-- Estrategias de acoplamiento entre modelos ópticos, térmicos y de sistema  
-- Definición de variables y restricciones de optimización  
+- Documentación de las lecciones aprendidas  
+- Elaboración de una hoja de ruta estratégica de investigación  
+- Identificación de oportunidades emergentes para la innovación continua  
 
-WP1 proporciona la base de simulación de alta fidelidad necesaria para los desarrollos posteriores.
-
----
-
-## WP2 – Inteligencia Artificial y Modelado Sustituto
-
-**Objetivo:** Desarrollar modelos sustitutos basados en IA para acelerar las simulaciones.
-
-Principales tareas:
-
-- Generación de conjuntos de datos a partir de simulaciones CST  
-- Diseño y entrenamiento de modelos de aprendizaje automático  
-- Estrategias con conciencia de incertidumbre e incorporación de conocimiento físico  
-- Validación frente a simulaciones de referencia  
-
-El objetivo es reducir significativamente el coste computacional manteniendo precisión e interpretabilidad.
+Este paquete de trabajo garantiza que AI-HPC4CST no solo genere avances científicos inmediatos, sino también una visión a largo plazo para la evolución de sistemas energéticos avanzados apoyados en IA.
 
 ---
 
-## WP3 – Computación de Alto Rendimiento y Flujos Escalables
+## Perspectiva Integrada
 
-**Objetivo:** Permitir optimización a gran escala mediante integración HPC.
+La ejecución coordinada de estos cinco paquetes de trabajo permite:
 
-Actividades clave:
+- Una gobernanza sólida del proyecto  
+- El desarrollo y despliegue de tecnologías avanzadas de optimización basadas en IA y HPC  
+- La demostración mediante problemas piloto en sistemas termosolares de torre  
+- El posicionamiento estratégico a largo plazo en la optimización de sistemas energéticos complejos  
 
-- Estrategias de paralelización de simulaciones  
-- Marcos de optimización distribuida  
-- Exploración eficiente de espacios de diseño de alta dimensión  
-- Evaluación de rendimiento y escalabilidad  
-
-WP3 garantiza la aplicabilidad del marco de optimización en escenarios realistas.
-
----
-
-## WP4 – Optimización Multiobjetivo y Marco de Decisión
-
-**Objetivo:** Integrar IA y HPC en una estrategia unificada de optimización.
-
-Aborda:
-
-- Algoritmos de optimización multiobjetivo  
-- Análisis de compromisos (rendimiento–coste–fiabilidad)  
-- Gestión de restricciones y robustez  
-- Integración de modelos sustitutos en los bucles de optimización  
-
-WP4 constituye el núcleo metodológico del proyecto.
-
----
-
-## WP5 – Demostración, Validación e Impacto
-
-**Objetivo:** Validar el marco desarrollado y maximizar su impacto científico y social.
-
-Incluye:
-
-- Aplicación a casos de estudio representativos  
-- Comparación con metodologías tradicionales de diseño  
-- Publicación de resultados científicos  
-- Liberación de herramientas y documentación  
-- Actividades de difusión y transferencia  
-
-Este paquete garantiza excelencia científica, transparencia y relevancia práctica.
-
----
-
-## Actividades Transversales
-
-En todos los paquetes se priorizan:
-
-- Principios de ciencia abierta y reproducibilidad  
-- Documentación y sostenibilidad del software  
-- Integración interdisciplinar entre IA, HPC e ingeniería solar térmica  
-
-La ejecución coordinada de estos paquetes permitirá desarrollar un marco de optimización coherente y de alto impacto para sistemas de torre solar de nueva generación.
+En conjunto, proporcionan un marco coherente para avanzar en la optimización a gran escala basada en simulación en sistemas termosolares de torre.
