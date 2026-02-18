@@ -298,18 +298,23 @@
    CARDS
 ============================ */
 
-.card {
+.card,
+.toolCard {
   border: 1px solid var(--ifm-color-emphasis-200);
   border-radius: 20px;
-  padding: 1.05rem 1.05rem 1rem;
-  background: rgba(255, 255, 255, 0.03);
   text-decoration: none !important;
   color: inherit;
+  background: rgba(255, 255, 255, 0.03);
   transition: transform 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
   box-shadow: 0 10px 24px rgba(2, 8, 23, 0.06);
 }
 
-.card:hover {
+.card {
+  padding: 1.05rem 1.05rem 1rem;
+}
+
+.card:hover,
+.toolCard:hover {
   transform: translateY(-2px);
   border-color: var(--ifm-color-primary);
   box-shadow: 0 14px 30px rgba(2, 8, 23, 0.1);
@@ -362,23 +367,12 @@
 
 .toolCard,
 .toolCardMuted {
-  border-radius: 20px;
   padding: 1.05rem;
+}
+
+.toolCardMuted {
+  border-radius: 20px;
   border: 1px solid var(--ifm-color-emphasis-200);
-}
-
-.toolCard {
-  text-decoration: none !important;
-  color: inherit;
-  background: rgba(255, 255, 255, 0.03);
-  transition: transform 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
-  box-shadow: 0 10px 24px rgba(2, 8, 23, 0.06);
-}
-
-.toolCard:hover {
-  transform: translateY(-2px);
-  border-color: var(--ifm-color-primary);
-  box-shadow: 0 14px 30px rgba(2, 8, 23, 0.1);
 }
 
 .toolCardMuted {
