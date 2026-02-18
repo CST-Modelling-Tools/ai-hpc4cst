@@ -108,7 +108,7 @@ export default function Home() {
 
   const layoutDescription = translate({
     id: 'home.meta.description',
-    message: 'The official AI-HPC4CST ATRAE project website: objectives, research, timeline, results, and tools.',
+    message: 'Advanced High-Dimensional Metaheuristic Optimisation for Solar Tower and Other Energy Systems.',
   });
 
   const heroAria = translate({
