@@ -41,9 +41,10 @@ function FundingBlock() {
         aria-label="MICIU and AEI"
         style={{display: 'inline-flex', alignItems: 'center'}}>
         <img
+          className="funding-logo"
           src={combinedLogo}
           alt="MICIU and AEI"
-          style={{height: 46, borderRadius: 6}}
+          style={{height: 46}}
         />
       </a>
     </div>

@@ -68,7 +68,7 @@ function FundingStrip() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label={ariaLogo}>
-        <img className={styles.fundingLogo} src={logo} alt={altLogo} />
+        <img className={`funding-logo ${styles.fundingLogo}`} src={logo} alt={altLogo} />
       </a>
     </div>
   );

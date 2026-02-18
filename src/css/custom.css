@@ -98,3 +98,8 @@ a {
 .navbar {
   min-height: 68px;
 }
+
+.funding-logo {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
