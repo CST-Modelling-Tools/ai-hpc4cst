@@ -47,7 +47,7 @@ This role contributes directly to the technological development and validation p
 AI-HPC4CST is hosted at:
 
 CIEMAT  
-Energy Department 
+Energy Department  
 Plataforma Solar de Almería (PSA)  
 Spain 
 
