@@ -46,8 +46,9 @@ This role contributes directly to the technological development and validation p
 
 AI-HPC4CST is hosted at:
 
-[Institution Name]  
-[Department / Research Unit]  
-[City, Country]
+CIEMAT  
+Energy Department 
+Plataforma Solar de Almería (PSA)  
+Spain 
 
 The host institution provides established expertise in solar energy systems, computational modelling, and research infrastructure supporting high-performance computing.
