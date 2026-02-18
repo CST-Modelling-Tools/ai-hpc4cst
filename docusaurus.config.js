@@ -71,6 +71,15 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/social-card.jpg',
+      metadata: [
+        {property: 'og:type', content: 'website'},
+        {name: 'twitter:title', content: 'AI-HPC4CST'},
+        {
+          name: 'twitter:description',
+          content:
+            'Advanced High-Dimensional Metaheuristic Optimisation for Solar Tower and Other Energy Systems',
+        },
+      ],
 
       colorMode: {
         respectPrefersColorScheme: true,
