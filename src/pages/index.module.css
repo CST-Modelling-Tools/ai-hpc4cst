@@ -191,28 +191,10 @@
   user-select: none;
 }
 
-.heroPhotoBase {
-  display: block;
-}
-
-.heroPhotoIncoming {
+.heroPhotoOverlay {
   position: absolute;
   inset: 0;
-  opacity: 0;
-  transition: opacity 650ms ease;
-}
-
-.heroPhotoIncomingVisible {
-  opacity: 1;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .heroPhotoIncoming {
-    transition: none;
-  }
-}
-
-.heroPhotoOverlay {
+  pointer-events: none;
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.08),

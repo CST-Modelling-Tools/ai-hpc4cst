@@ -74,12 +74,7 @@ function FundingStrip() {
   );
 }
 
-/**
- * Cross-fade carousel:
- * - Two layers (base + incoming) with opacity transition.
- * - Preloads the next image before fading in.
- * - Respects prefers-reduced-motion (no rotation, no transitions).
- */
+/** Hero photo card */
 function HeroPhotoCard() {
   const img = useBaseUrl('/img/psa/psa-ai-01.webp'); // <-- your AI-enhanced image
 
@@ -88,7 +83,7 @@ function HeroPhotoCard() {
       <img
         src={img}
         alt="CIEMAT-PSA solar tower systems with AI-enhanced optimisation visualisation"
-        className={clsx(styles.heroPhoto, styles.heroPhotoBase)}
+        className={styles.heroPhoto}
         draggable="false"
         loading="eager"
       />
