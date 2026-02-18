@@ -67,10 +67,3 @@ For issues related to project software:
 - Please use the corresponding GitHub repository issue tracker.
 - For general enquiries, contact the PI via email.
 
----
-
-## Funding Acknowledgement
-
-AI-HPC4CST is funded under the ATRAE programme:
-
-> Grant ATR2024-155003 funded by MICIU/AEI/10.13039/501100011033.

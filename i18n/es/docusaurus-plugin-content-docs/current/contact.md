@@ -66,11 +66,3 @@ Para incidencias relacionadas con el software del proyecto:
 
 - Utilice el sistema de gestión de incidencias del repositorio correspondiente en GitHub.  
 - Para consultas generales, contacte con el Investigador Principal por correo electrónico.
-
----
-
-## Reconocimiento de Financiación
-
-AI-HPC4CST está financiado en el marco del programa ATRAE:
-
-> Proyecto ATR2024-155003 financiado por MICIU/AEI/10.13039/501100011033.
