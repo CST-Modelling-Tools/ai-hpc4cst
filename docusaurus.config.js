@@ -47,7 +47,6 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/CST-Modelling-Tools/ai-hpc4cst/tree/main/',
         },
         blog: {
           showReadingTime: true,
