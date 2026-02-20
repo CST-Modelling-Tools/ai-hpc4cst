@@ -53,6 +53,18 @@ The project follows a distributed documentation model:
 - The main website provides project context and integration.  
 - Individual tools maintain dedicated repositories and development documentation.
 
+### Generic Optimization Workflow (GOW)
+
+FireWorks-based scientific optimisation workflow toolkit for simulation-driven engineering studies.
+
+Development blog:  
+https://cst-modelling-tools.github.io/generic-optimization-workflow-blog/
+
+Repository:  
+https://github.com/CST-Modelling-Tools/generic-optimization-workflow
+
+---
+
 ### Tonatiuh++
 
 Ray-tracing and modelling toolkit for concentrating solar thermal applications.

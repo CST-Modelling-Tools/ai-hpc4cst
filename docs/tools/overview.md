@@ -18,11 +18,48 @@ Rather than a single monolithic application, AI-HPC4CST promotes a modular ecosy
 
 ---
 
-## Simulation and Modelling Tools
+## AI-Enhanced Optimisation Components & HPC-Enabled Workflow Integration
+
+AI-HPC4CST develops and integrates optimisation components designed to operate within simulation-in-the-loop environments and to scale efficiently on high-performance computing (HPC) infrastructures.
+
+This integrated layer combines:
+
+- Stochastic and evolutionary optimisation modules  
+- Multi-objective optimisation frameworks  
+- AI-assisted search strategies  
+- Adaptive exploration mechanisms for high-dimensional design spaces  
+- Parallel evaluation of candidate configurations  
+- Scalable execution of optimisation iterations  
+- Automated coordination between optimisation algorithms and simulation engines  
+- Performance-aware computational strategies  
+
+The focus is on enhancing optimisation capability while ensuring computational scalability and structured orchestration across heterogeneous simulation workloads.
+
+### Generic Optimization Workflow (GOW)
+
+Generic Optimization Workflow (GOW) is a FireWorks-based scientific optimisation workflow toolkit within the CST-Modelling-Tools ecosystem.
+
+It supports:
+
+- Workflow orchestration for optimisation studies  
+- Scalable execution across HPC-enabled environments  
+- Reproducible optimisation pipelines and task automation  
+
+Within AI-HPC4CST, GOW serves as:
+
+- A workflow engine coordinating simulation-in-the-loop optimisation  
+- A framework for reproducible and modular optimisation execution  
+- An integration layer between AI-enhanced search strategies and high-fidelity simulation tools  
+
+🔗 Development blog: [Generic Optimization Workflow Blog](https://cst-modelling-tools.github.io/generic-optimization-workflow-blog/)
+
+---
+
+## Simulation and Modelling and Systems Evaluation Tools
 
 High-fidelity simulation tools form the computational backbone of the optimisation framework.
 
-These tools are responsible for evaluating candidate system configurations through physics-based modelling, including optical and thermal processes relevant to solar tower systems.
+These tools are responsible for evaluating candidate system configurations through physics-based modelling, including optical and thermal processes relevant to solar tower systems and other complex energy applications.
 
 ### Tonatiuh++
 
@@ -42,38 +79,6 @@ Within AI-HPC4CST, Tonatiuh++ serves as:
 
 🔗 Development blog:  
 https://cst-modelling-tools.github.io/tonatiuhpp-blog/
-
----
-
-## AI-Enhanced Optimisation Components
-
-AI-HPC4CST develops and integrates optimisation components designed to operate within simulation-in-the-loop environments.
-
-These may include:
-
-- Stochastic and evolutionary optimisation modules  
-- Multi-objective optimisation frameworks  
-- AI-assisted search strategies  
-- Adaptive exploration mechanisms for high-dimensional design spaces  
-
-The focus is on enhancing optimisation capability rather than replacing physical simulation models.
-
-Where appropriate, these components will be released with documentation and versioned repositories.
-
----
-
-## HPC-Enabled Workflow Integration
-
-A key objective of the project is the structured integration of optimisation workflows with high-performance computing resources.
-
-This includes:
-
-- Parallel evaluation of candidate configurations  
-- Scalable execution of optimisation iterations  
-- Automated coordination between optimisation algorithms and simulation engines  
-- Performance-aware computational strategies  
-
-The goal is to design optimisation workflows that are inherently scalable and robust under increasing computational demand.
 
 ---
 
@@ -107,8 +112,8 @@ Each new development will follow the same principles of openness, modularity, an
 
 AI-HPC4CST promotes a modular, scalable computational ecosystem in which:
 
-- Specialised simulation tools  
 - AI-enhanced optimisation algorithms  
+- Specialised simulation tools  
 - High-performance computing workflows  
 
 operate together within a unified, simulation-driven optimisation framework.

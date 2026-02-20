@@ -126,6 +126,10 @@ const config = {
             position: 'left',
             items: [
               {
+                label: 'Generic Optimization Workflow',
+                href: 'https://cst-modelling-tools.github.io/generic-optimization-workflow-blog/',
+              },
+              {
                 label: 'Tonatiuh++',
                 href: 'https://cst-modelling-tools.github.io/tonatiuhpp-blog/',
               },
@@ -166,6 +170,10 @@ const config = {
           {
             title: 'Tools',
             items: [
+              {
+                label: 'Generic Optimization Workflow Blog',
+                href: 'https://cst-modelling-tools.github.io/generic-optimization-workflow-blog/',
+              },
               {
                 label: 'Tonatiuh++ Development Blog',
                 href: 'https://cst-modelling-tools.github.io/tonatiuhpp-blog/',

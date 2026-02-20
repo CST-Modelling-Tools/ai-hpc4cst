@@ -249,6 +249,24 @@ export default function Home() {
             <div className={styles.grid2}>
               <a
                 className={styles.toolCard}
+                href="https://cst-modelling-tools.github.io/generic-optimization-workflow-blog/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={translate({
+                  id: 'home.tools.gow.aria',
+                  message: 'Generic Optimization Workflow Development Blog (opens in a new tab)',
+                })}>
+                <div className={styles.toolName}>Generic Optimization Workflow</div>
+                <div className={styles.toolDesc}>
+                  <Translate id="home.tools.gow.desc">FireWorks-based scientific optimization workflow blog</Translate>
+                </div>
+                <div className={styles.toolCta}>
+                  <Translate id="home.tools.gow.cta">Open blog →</Translate>
+                </div>
+              </a>
+
+              <a
+                className={styles.toolCard}
                 href="https://cst-modelling-tools.github.io/tonatiuhpp-blog/"
                 target="_blank"
                 rel="noopener noreferrer"
