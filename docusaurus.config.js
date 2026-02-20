@@ -48,17 +48,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          editUrl: 'https://github.com/CST-Modelling-Tools/ai-hpc4cst/tree/main/',
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -92,32 +82,7 @@ const config = {
           {
             type: 'docSidebar',
             sidebarId: 'projectSidebar',
-            label: 'Project',
-            position: 'left',
-          },
-
-          {
-            type: 'doc',
-            docId: 'research/overview',
-            label: 'Research',
-            position: 'left',
-          },
-          {
-            type: 'doc',
-            docId: 'results/publications',
-            label: 'Results',
-            position: 'left',
-          },
-          {
-            type: 'doc',
-            docId: 'team/core-team',
-            label: 'Team',
-            position: 'left',
-          },
-          {
-            type: 'doc',
-            docId: 'contact',
-            label: 'Contact',
+            label: 'Documentation',
             position: 'left',
           },
 
@@ -159,11 +124,11 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'AI-HPC4CST',
+            title: 'Website',
             items: [
-              {label: 'Project', to: '/docs/project/objectives'},
-              {label: 'Research', to: '/docs/research/overview'},
-              {label: 'Results', to: '/docs/results/publications'},
+              {label: 'Home', to: '/'},
+              {label: 'Documentation', to: '/docs/intro'},
+              {label: 'Tools', to: '/docs/tools/overview'},
               {label: 'Contact', to: '/docs/contact'},
             ],
           },
